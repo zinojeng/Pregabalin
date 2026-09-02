@@ -14,22 +14,22 @@ Scope this wave: verify the four leads dispatched by `dpnp-research-director` (W
 - **Access route:** PMC full text (`pmc.ncbi.nlm.nih.gov/articles/PMC12690177`), opened directly this session.
 - **Verification tier:** `ACCESS_VERIFIED` (primary record opened directly).
 
-| # | Exact wording (verbatim) | Grade | Evidence class | Locator |
+| # | Concise paraphrase of clinical substance | Grade | Evidence class | Locator |
 |---|---|---|---|---|
-| Rec 12.17 | "All people with diabetes should be assessed for diabetic peripheral neuropathy starting at diagnosis of type 2 diabetes and 5 years after the diagnosis of type 1 diabetes and at least annually thereafter." | B | GUIDELINE / CONSENSUS | Ch.12, Neuropathy screening subsection |
-| Rec 12.18 | "Assessment for distal symmetric polyneuropathy should include a careful history and assessment of either temperature or pinprick sensation (small-fiber function) and vibration sensation using a 128-Hz tuning fork (large-fiber function). All people with diabetes should have annual 10-g monofilament testing to identify feet at risk for ulceration and amputation." | B | GUIDELINE / CONSENSUS | ibid. |
-| Rec 12.19 | "Symptoms and signs of autonomic neuropathy should be assessed in people with diabetes starting at diagnosis of type 2 diabetes and 5 years after the diagnosis of type 1 diabetes, and at least annually thereafter, and with evidence of other microvascular complications, particularly kidney disease and diabetic peripheral neuropathy…" | E | GUIDELINE / CONSENSUS | ibid. — sentence truncated in extraction; **flag for re-verification of full sentence before final synthesis quotation** |
-| Rec 12.20 | "Optimize glucose management to prevent or delay the development of neuropathy in people with type 1 diabetes [A] and to slow the progression of neuropathy in people with type 2 diabetes [C]…[B]" | A / C / B (multi-part) | GUIDELINE / CONSENSUS | ibid. — **multi-graded recommendation; exact clause-to-grade mapping needs re-check against the journal PDF before verbatim quotation in `40_SYNTHESIS/`, current extraction is PMC-page-derived, not page-image-verified** |
-| Rec 12.21 | "Assess and treat pain related to diabetic peripheral neuropathy [B] and symptoms of autonomic neuropathy to improve quality of life. [E]" | B (pain) / E (autonomic sx) | GUIDELINE / CONSENSUS | ibid. — directly supports Charter's "treatment goals = pain/sleep/function/QoL, not nerve reversal" framing |
-| Rec 12.22 | "Gabapentinoids, serotonin-norepinephrine reuptake inhibitors, tricyclic antidepressants, and sodium channel blockers are recommended as initial pharmacologic treatments for neuropathic pain in diabetes. [A]… Opioids, including tramadol and tapentadol, should not be used for neuropathic pain treatment in diabetes given the potential for adverse events except in rare circumstances. [B]" | A (drug classes, pooled) / B (against opioids) | GUIDELINE / CONSENSUS | ibid. |
+| Rec 12.17 | T2D 自診斷時、T1D 診斷滿 5 年後開始篩檢 DPN，此後至少每年評估。 | B | GUIDELINE / CONSENSUS | Ch.12, Neuropathy screening subsection |
+| Rec 12.18 | DSPN 評估包括病史、temperature 或 pinprick（small-fiber）、128-Hz tuning fork vibration（large-fiber），並每年做 10-g monofilament 以辨識足部潰瘍／截肢風險。 | B | GUIDELINE / CONSENSUS | ibid. |
+| Rec 12.19 | 依糖尿病型別與病程定期評估 autonomic neuropathy；有其他 microvascular complications 時尤其注意。 | E | GUIDELINE / CONSENSUS | ibid. — full clause/qualifier mapping was not used verbatim in synthesis |
+| Rec 12.20 | 最佳化 glucose management，以預防／延緩 T1D neuropathy，並減慢 T2D neuropathy progression；此為多子句、多 grade 建議。 | A / C / B (multi-part) | GUIDELINE / CONSENSUS | ibid. — exact clause-to-grade mapping not quoted in synthesis |
+| Rec 12.21 | 評估並處理 DPN pain 與 autonomic symptoms，以改善生活品質。 | B (pain) / E (autonomic sx) | GUIDELINE / CONSENSUS | ibid. — supports pain/sleep/function/QoL rather than nerve-reversal framing |
+| Rec 12.22 | 初始藥物類別包括 gabapentinoids、SNRIs、TCAs、sodium-channel blockers；除罕見例外，不使用 opioids（含 tramadol、tapentadol）。 | A (drug classes, pooled) / B (against opioids) | GUIDELINE / CONSENSUS | ibid. |
 
 **Explicit no-reversal statement (Charter-relevant):** "Specific treatment to reverse the underlying nerve damage in diabetes is currently not available" — direct textual support for the Charter's non-negotiable rule against implying analgesic therapy reverses nerve damage. **Class: GUIDELINE / CONSENSUS.**
 
-**Differential/red-flag statement:** "In all people with diabetes and DPN, causes of neuropathy other than diabetes should be considered, including toxins (e.g., alcohol), neurotoxic medications (e.g., chemotherapy), vitamin B12 [deficiency], hypothyroidism, kidney disease, malignancies…infections (e.g., HIV, hepatitis C)…" and referral is warranted for "acute or subacute presentation, non–length dependent, asymmetric, and/or motor involvement." **Class: GUIDELINE / CONSENSUS.**
+**Differential/red-flag statement (paraphrased):** 即使病人有 diabetes 與 DPN，仍須考慮 alcohol／toxins、chemotherapy 等 neurotoxic medications、vitamin B12 deficiency、hypothyroidism、kidney disease、malignancy、HIV／hepatitis C 等替代病因。Acute/subacute、non-length-dependent、asymmetric 或 motor-predominant presentation 應考慮轉介。**Class: GUIDELINE / CONSENSUS.**
 
 ⚠️ **Sponsor-bias-relevant finding:** Rec 12.22 recommends gabapentinoids, SNRIs, TCAs, and sodium-channel blockers as a **pooled class-level Grade A** option — it does **not** single out pregabalin (or any one drug) as preferred. This must not be paraphrased into a pregabalin-specific "Grade A" claim in synthesis.
 
-⚠️ **Caveat on this table's own reliability:** Rec 12.19/12.20 wording above was extracted via an automated fetch-and-summarize tool (WebFetch) reading the PMC page, not by this session reading raw PMC HTML/PDF text directly. The DOI and Rec 12.17/12.18/12.21/12.22 core sentences read consistently across two independent tool calls and match the source register's independently-obtained snippets, so confidence is HIGH for those. Rec 12.19 and the exact grade-to-clause mapping in 12.20 are **lower confidence** pending a raw-text re-pull (PMC HTML or journal PDF) before verbatim use in `40_SYNTHESIS/`. Logged here rather than silently smoothed over, per CLAUDE.md's "never silently repair" rule.
+⚠️ **Caveat on this table's own reliability:** Rec 12.19/12.20 substance was extracted via WebFetch reading the PMC page rather than raw PDF page images. The DOI and Rec 12.17/12.18/12.21/12.22 core substance was consistent across two independent tool calls and the source register, so confidence is HIGH for those. Rec 12.19 and the exact grade-to-clause mapping in 12.20 remain **lower confidence** and are not quoted verbatim in `40_SYNTHESIS/`. Logged rather than silently smoothed over, per CLAUDE.md's "never silently repair" rule.
 
 ---
 
@@ -38,35 +38,40 @@ Scope this wave: verify the four leads dispatched by `dpnp-research-director` (W
 - **Citation:** Price R, Smith D, Franklin G, Gronseth G, Pignone M, David WS, Armon C, Perkins BA, Bril V, Rae-Grant A, Halperin J, Licking N, O'Brien MD, Wessels SR, MacGregor LC, Fink K, Harkless LB, Colbert L, Callaghan BC. "Oral and Topical Treatment of Painful Diabetic Polyneuropathy: Practice Guideline Update Summary: Report of the AAN Guideline Subcommittee." *Neurology.* 2022;98:31–43.
 - **DOI:** `10.1212/WNL.0000000000013038`
 - **PMID:** 34965987 — confirmed via `paper-search` MCP PubMed search; full author list matches source register lead exactly (previously only "Price/Franklin/Gronseth et al." was corroborated — now complete).
-- **Access route:** (a) PubMed abstract (effect sizes, top-line Level B statements) — `ACCESS_VERIFIED`; (b) AAN's own lawfully-hosted clinician summary PDF (`aan.com/Guidelines/home/GetGuidelineContent/1055`), fetched directly, converted locally with `pdftotext`, all 9 numbered recommendations with exact Level grades captured verbatim. **Full PDF stored locally only** at `20_EVIDENCE/guidelines-diagnosis/fulltext-local/AAN-2022-painful-DPN-guideline-summary.pdf` (gitignored) per AAN's "single copy for personal use" redistribution restriction — only short excerpts below are committed, consistent with fair use and CLAUDE.md's full-text policy.
+- **Access route:** (a) PubMed abstract (effect sizes, top-line Level B statements) — `ACCESS_VERIFIED`; (b) AAN's own lawfully-hosted clinician summary PDF (`aan.com/Guidelines/home/GetGuidelineContent/1055`), fetched directly and checked locally with `pdftotext`. **Full PDF stored locally only** at `20_EVIDENCE/guidelines-diagnosis/fulltext-local/AAN-2022-painful-DPN-guideline-summary.pdf` (gitignored) per AAN's "single copy for personal use" redistribution restriction. The committed table below is a concise paraphrase of the clinical substance and Level grades; it does not reproduce the full recommendation text.
 - **Verification tier:** `ACCESS_VERIFIED` (primary record + own-society-published clinician summary, not a press release).
 
-| Rec # | Exact wording (verbatim) | Level |
+| Rec # | Concise paraphrase of clinical substance | Level |
 |---|---|---|
-| 1 | "Clinicians should assess patients with diabetes for peripheral neuropathic pain and its effect on these patients' function and quality of life." | B |
-| 2 | "When initiating pharmacologic intervention for painful diabetic neuropathy, clinicians should counsel patients that the goal of therapy is to reduce, and not necessarily to eliminate, pain." | B |
-| 3 | "Clinicians should assess patients with painful diabetic neuropathy for the presence of concurrent mood and sleep disorders and treat them as appropriate." | B |
-| 4 | "In patients with painful diabetic neuropathy, clinicians should offer TCAs, SNRIs, gabapentinoids, and/or sodium channel blockers to reduce pain." | B |
-| 5 | "Clinicians may assess patient preferences for effective oral, topical, nontraditional, and nonpharmacologic interventions for painful diabetic neuropathy." / "…providers may offer topicals (capsaicin, glyceryl trinitrate spray, *Citrullus colocynthis*), nontraditional (ginkgo biloba), and/or nonpharmacologic interventions (CBT, exercise, Tai Chi, mindfulness)." | C |
-| 6 | "Given similar efficacy, clinicians should consider factors other than efficacy, including potential adverse effects, patient comorbidities, cost, and patient preferences, when recommending treatment for painful diabetic neuropathy." | B |
-| 6 (cont.) | "In patients of child-bearing potential with painful diabetic neuropathy, clinicians should not offer valproic acid." / "In all patients with painful diabetic neuropathy, clinicians should not prescribe valproic acid given the potential for serious adverse events unless multiple other effective medications have failed." | B |
-| 7 | "Clinicians should counsel patients that a series of medications may need to be tried to identify the treatment that most benefits patients with painful diabetic neuropathy." | B |
-| 7 (cont.) | "Clinicians should determine that an individual intervention to reduce neuropathic pain is a failure either when the medication has been titrated to a demonstrated efficacious dose for approximately 12 weeks without clinically significant pain reduction or when side effects from the medication outweigh any benefit…" | B |
-| 7 (cont.) | "Clinicians should offer patients a trial of a medication from a different effective class when they do not achieve meaningful improvement or if they experience significant adverse effects with the initial therapeutic class." | B |
-| 7 (cont.) | "For patients who achieve partial improvement with an initial therapeutic class, clinicians should offer a trial of a medication from a different effective class or combination therapy by adding a medication from a different effective class." | B |
-| 8 (opioids) | "Clinicians should not use opioids for the treatment of painful diabetic neuropathy." | B |
-| 8 (cont.) | "If patients are currently on opioids for the treatment of painful diabetic neuropathy, clinicians may offer the option of a safe taper off these medications and discuss alternative nonopioid treatment strategies." | C |
-| 9 (tramadol/tapentadol) | "Clinicians should not use tramadol and tapentadol (opioids/SNRI dual mechanism agents) for the treatment of painful diabetic neuropathy." | C |
-| 9 (cont.) | "If patients are currently on tramadol and tapentadol…clinicians may offer the option of a safe taper off these medications and discuss alternative nonopioid treatment strategies." | C |
+| 1 | 評估 peripheral neuropathic pain，以及它對功能與生活品質的影響。 | B |
+| 2 | 開始藥物治療時先設定務實目標：降低疼痛，不保證完全消除。 | B |
+| 3 | 同步評估並處理 mood 與 sleep disorders。 | B |
+| 4 | 可提供 TCAs、SNRIs、gabapentinoids 或 sodium-channel blockers 作為有效類別選項。 | B |
+| 5 | 納入病人對 oral、topical、nontraditional 與 nonpharmacologic interventions 的偏好；原摘要列有 topical agents、CBT、exercise、Tai Chi、mindfulness 等例子。 | C |
+| 6 | 因類別間療效相近，選藥應同時考慮不良反應、共病、成本與病人偏好。 | B |
+| 6 (cont.) | 有生育可能者避免 valproic acid；其他病人亦不宜使用，除非多種有效藥物皆失敗且已衡量其嚴重風險。 | B |
+| 7 | 事先說明可能需要依序試用數種藥物；足量治療約 12 週仍無具臨床意義的改善，或副作用大於效益，可視為失敗。 | B |
+| 7 (cont.) | 初始類別無 meaningful improvement 或有顯著不良反應時，改試另一有效類別；部分改善時，可改試另一類別或加入不同類別做 combination therapy。 | B |
+| 8 | 不以 opioids 治療；已使用者可討論安全 taper 與 nonopioid alternatives。 | B（不用）／C（taper option） |
+| 9 | 不以 tramadol 或 tapentadol 治療；已使用者可討論安全 taper 與 nonopioid alternatives。 | C |
 
-**Effect-size data (from PubMed abstract, PMID 34965987, class-pooled, not drug-specific):**
-"Gabapentinoids (SMD 0.44; 95% CI, 0.21–0.67), serotonin-norepinephrine reuptake inhibitors (SNRIs) (SMD 0.47; 95% CI, 0.34–0.60), sodium channel blockers (SMD 0.56; 95% CI, 0.25–0.87), and SNRI/opioid dual mechanism agents (SMD 0.62; 95% CI, 0.38–0.86) all have comparable effect sizes just above or just below our cutoff for a medium effect size (SMD 0.5). Tricyclic antidepressants (TCAs) (SMD 0.95; 95% CI, 0.15–1.8) have a large effect size, but this result is tempered by a low confidence in the estimate." **Class: DIRECT EVIDENCE** (meta-analytic synthesis underlying the guideline), reported at the **drug-class** level, not specific to pregabalin within the gabapentinoid class.
+**Effect-size data (PubMed abstract, PMID 34965987; class-pooled, not drug-specific):**
+
+| Drug class | SMD | 95% CI |
+|---|---:|---|
+| Gabapentinoids | 0.44 | 0.21–0.67 |
+| SNRIs | 0.47 | 0.34–0.60 |
+| Sodium-channel blockers | 0.56 | 0.25–0.87 |
+| SNRI/opioid dual-mechanism agents | 0.62 | 0.38–0.86 |
+| TCAs | 0.95 | 0.15–1.8 |
+
+The first four estimates cluster around the guideline's medium-effect threshold; the TCA estimate is larger but markedly imprecise and rated with low confidence. **Class: DIRECT EVIDENCE** (meta-analytic synthesis underlying the guideline), reported at the **drug-class** level, not specific to pregabalin within the gabapentinoid class.
 
 ⚠️ **Sponsor-bias-relevant finding:** This is the current operative AAN recommendation, and it treats TCAs/SNRIs/gabapentinoids/sodium-channel blockers as an undifferentiated first-line tier (Level B, "offer…and/or"), explicitly stating comparable effect sizes make "recommendations for one [class] over another difficult." No pregabalin-specific superiority claim is supported by this source.
 
 **Renal/edema/comorbidity content in this summary:** gabapentinoid-specific dose/renal-adjustment tables were **not** included in this clinician-summary PDF; this is flagged as a gap for `dpnp-pregabalin-safety` to source from the FDA/product label rather than duplicated here (file-ownership boundary).
 
-**CORRECTION LOG (2026-09-03, in response to Director's challenge round):** The Recommendation-number labels for the "given similar efficacy / valproic acid" bullets and the "series of medications / 12-week failure / different-class trial / combination therapy" bullets were originally misattributed (labeled "4 (cont.)" and "6/6 (cont.)"), and the opioid/tramadol bullets were consequently off by one ("7"/"8" instead of "8"/"9"). Re-verified against the PDF's raw (non-`-layout`) reading order, which follows true recommendation sequence rather than the two-column visual layout that misled the first extraction. **Every verbatim quotation and every Level grade was already correct in the original table — only the Rec-# locator labels were wrong.** No clinical content, grade, or drug-class statement changes as a result of this correction. Table above now reflects the corrected numbering (Rec 1–9, matching the source's own numbering exactly).
+**CORRECTION LOG (2026-09-03, in response to Director's challenge round):** The Recommendation-number labels for the "similar efficacy / valproic acid" and "series of medications / 12-week failure / different-class trial / combination therapy" items were originally misattributed, and the opioid/tramadol items were consequently off by one. Re-verification against the PDF's raw (non-`-layout`) reading order corrected only the Rec-# locators; no clinical substance, Level grade, or drug-class statement changed. The table was subsequently converted from verbatim text to concise paraphrases during final compliance review; Rec 1–9 numbering and grades remain source-checked.
 
 ---
 

@@ -18,12 +18,6 @@
 - Gate 1 declared `READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-05) — sufficient lead coverage to unblock Wave 2 deep verification; real gaps remain (see Open Questions).
 - Wave 2 dispatched to `dpnp-guideline-diagnosis`, `dpnp-trials-comparative`, `dpnp-pregabalin-safety`.
 
-## In progress
-
-- `dpnp-source-provenance`: closing remaining gaps in its own scope — Taiwan TFDA and FDA/DailyMed Pregabalin label discovery, ADA Ch.12 DOI confirmation.
-- `dpnp-guideline-diagnosis`: open and verify ADA 2026 Ch.12, AAN 2022 update, and Toronto Consensus at their primary records with exact quotations/locators.
-- `dpnp-pregabalin-safety`: independently search for the Taiwan/FDA Pregabalin label rather than wait on source-provenance; verify labeling and safety evidence.
-
 ## Completed (Wave 2 — all three specialists reported and accepted)
 
 - `dpnp-trials-comparative`: Wave 2 evidence table complete (`20_EVIDENCE/trials-comparative/01_EVIDENCE-TABLE.md`) — T1 Freeman 2008, T2 Frontiers 2026 combo SR-MA, T3 Soliman/NeuPSIG 2025, T4 Mallick-Searle 2024 (narrative review), T5 COMBO-DN, T6 OPTION-DM all `ACCESS_VERIFIED` at primary record. Key counter-bias findings recorded (Decision 2026-09-03-06): α2δ-ligand class NNT ranks numerically worst of the three first-line classes per Soliman/NeuPSIG 2025; COMBO-DN found no significant combination-vs-monotherapy superiority; OPTION-DM found no pregabalin-pathway superiority over amitriptyline/duloxetine pathways.
@@ -44,6 +38,7 @@
 
 - Independent read-only auditor (temporary, no write access beyond `99_FINAL-QA.md`) completed full review: numbers, methods/evidence (all 6 mandated sponsor-bias checks passed with zero exceptions), writing, and provenance (8/8 spot-checked DOIs/PMIDs resolved correctly via Europe PMC, including the load-bearing AAN 2011 `[RETIRED]` tag). Research-quality verdict: `PASS_WITH_MINOR_ISSUES`.
 - Director accepted the report and fixed both findings directly (Decision 2026-09-03-17): removed an untraceable dose-stratified AE figure from the Brief (replaced with the already-verified All-PGB figures plus a disclosure note, not silently dropped) and corrected an incomplete OPTION-DM sample-size statement in both synthesis files.
+- A second read-only Claude CLI branch review after integration identified documentation/compliance issues not covered by the first audit. All high-confidence findings were corrected in Decision 2026-09-03-18: AAN restricted-source recommendation text was converted to concise paraphrase; the correct FDA 04/2025 PDF was downloaded/checksummed and designated as the future LlamaParse target; unsupported dose-stratified AE figures were removed from the evidence summary; the QA's full OPTION-DM N funnel and a standalone-audience cross-reference were corrected. See `98_CLAUDE-REVIEW.md`.
 
 ## Gate history (all gates this run)
 
@@ -54,7 +49,7 @@
 
 ## Residual blocker (tracked separately from research gates)
 
-- **LlamaParse network block**: `api.cloud.llamaindex.ai` is unreachable from this environment (zero-payload requests stall/timeout identically to real parse attempts; other hosts work normally). Root-caused by `dpnp-source-provenance`, no credentials exposed. Remediation needed: Human PI/operator to verify/restore network egress to `api.cloud.llamaindex.ai` (e.g. check environment network allowlist/firewall config), after which `dpnp-source-provenance` can retry parsing the already-downloaded, lawfully-obtained FDA label PDF (`fulltext-local/`, SHA-256 logged in `10_SOURCES/FULLTEXT_LEDGER.md`) with no new download needed. Interim mitigation: the label's full substantive content is already captured via direct extraction in `20_EVIDENCE/pregabalin-safety/LABELING_FDA.md` and is used in `40_SYNTHESIS/`.
+- **LlamaParse network block**: `api.cloud.llamaindex.ai` is unreachable from this environment (zero-payload requests stall/timeout identically to real parse attempts; other hosts work normally). Root-caused by `dpnp-source-provenance`, no credentials exposed. Remediation needed: Human PI/operator to verify/restore network egress to `api.cloud.llamaindex.ai`, after which `dpnp-source-provenance` can retry the correct, already-downloaded FDA 04/2025 PDF (`fulltext-local/LYRICA_pregabalin_FDA_2025_Ref5578761.pdf`; SHA-256 logged in `10_SOURCES/FULLTEXT_LEDGER.md`) with no new download needed. The earlier four failures used a superseded 06/2020 DailyMed PDF and are retained only as attempt history. Interim mitigation: the current label's full substantive content is already captured via direct extraction in `20_EVIDENCE/pregabalin-safety/LABELING_FDA.md` and is used in `40_SYNTHESIS/`.
 
 ## Blockers
 

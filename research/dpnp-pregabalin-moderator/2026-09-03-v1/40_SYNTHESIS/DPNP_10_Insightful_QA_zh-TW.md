@@ -36,7 +36,7 @@ PROJECT: `dpnp-pregabalin-moderator` ｜ RUN: `2026-09-03-v1` ｜ 定稿日期�
 
 **模型答案**：兩項試驗都**沒有**顯示 Pregabalin-based 治療優於 duloxetine-based 或 amitriptyline-based 治療。COMBO-DN（*Pain* 2013）中，duloxetine+pregabalin 合併治療於主要指標上並未顯著優於高劑量單一治療（P=0.370）；一項未校正多重比較之探索性分析顯示 duloxetine 60mg 優於 pregabalin 300mg（P<0.001），但這**僅為探索性、非確認性結果**。OPTION-DM（*Lancet* 2022）三路徑交叉試驗中，amitriptyline-based、pregabalin-based、duloxetine-based 路徑於第 16 週療效相近，兩兩比較之信賴區間皆涵蓋 0——正確結論是「未發現顯著差異」，而非「Pregabalin 較差」或「較優」。
 
-**證據與不確定性**：`DIRECT EVIDENCE`，DPN 專屬頭對頭 RCT，證據等級高、確定性相對佳（惟 OPTION-DM 共 140 人隨機分派，僅 84 人完成 ≥2 路徑並納入主要療效分析，屬中等樣本量）。
+**證據與不確定性**：`DIRECT EVIDENCE`，DPN 專屬頭對頭 RCT，證據等級高、確定性相對佳（惟 OPTION-DM 共 140 人隨機分派，130 人至少開始一個治療路徑，僅 84 人完成 ≥2 路徑並納入主要療效分析，屬中等樣本量）。
 
 **建議追問**：「如果三種治療路徑效果相近，臨床上決定選哪一種的關鍵因素應該是什麼？」（引導至不良反應、共病、成本、病人偏好，而非療效排序）
 

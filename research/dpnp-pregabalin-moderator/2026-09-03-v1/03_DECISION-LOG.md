@@ -134,3 +134,12 @@
 - **Final Gate status: `READY_WITH_EXTERNAL_BLOCKER`** — not `FINAL`, not plain `PASS`. Research quality is `PASS_WITH_MINOR_ISSUES` (now fully addressed by this decision), but per explicit Human PI instruction, the run cannot be marked fully passed/FINAL while the LlamaParse network blocker (Decision 2026-09-03-15) remains open. This status will be revisited only when the Human PI confirms network access is restored (permitting a retry) or explicitly waives the requirement.
 - Affected files: `40_SYNTHESIS/DPNP_Pregabalin_Moderator_Brief_zh-TW.md`, `40_SYNTHESIS/DPNP_10_Insightful_QA_zh-TW.md`, `05_STATUS.md`.
 - Approved by: Research Director.
+
+## Decision 2026-09-03-18 — Post-integration Claude CLI review accepted; provenance and redistribution fixes applied
+
+- Decision: Accept all high-confidence findings from the second, independent, read-only Claude CLI branch review (`98_CLAUDE-REVIEW.md`). Convert AAN 2022's near-complete verbatim recommendation table to concise paraphrases while preserving recommendation numbers and Level grades; remove the three remaining unlocated dose-stratified AE statements from `SAFETY_TOPICS.md`; restore the complete OPTION-DM N=140→130→84 funnel in the QA; and remove the audience-facing Brief's repository-internal audit cross-reference.
+- Full-text correction: the four earlier LlamaParse failures occurred against a superseded DailyMed 06/2020 PDF, not the FDA 04/2025 PDF backing `LABELING_FDA.md`. The actual 04/2025 FDA PDF (Reference ID 5578761) was lawfully downloaded, identity-checked, stored gitignored, and checksummed. A Human-PI-authorized Claude CLI retry against this correct file also returned `ConnectTimeout` and created no output. It is now the sole designated retry target after `api.cloud.llamaindex.ai` egress is restored; the old file remains attempt history only.
+- Taxonomy: `VERIFIED_AND_REPLACE` (documentation/provenance correction; no clinical conclusion changed).
+- Reason: These findings were directly reproducible from the committed files and project policy. Correcting them reduces redistribution risk, prevents an old label from being parsed as though it supported current evidence, and closes evidence-to-synthesis consistency gaps.
+- Final Gate remains `READY_WITH_EXTERNAL_BLOCKER`: this decision does not waive or resolve the required LlamaParse execution.
+- Approved by: Primary integrator after independent Claude CLI review.

@@ -10,7 +10,7 @@
 - Git remote: `https://github.com/zinojeng/Pregabalin.git`
 - Previous run: none identified
 - Current Wave: `4 INDEPENDENT AUDIT — complete` (Waves 0-4 all complete; see `05_STATUS.md` for full gate history)
-- Current Gate: **`READY_WITH_EXTERNAL_BLOCKER`** (Decision 2026-09-03-17 in `03_DECISION-LOG.md`) — research/synthesis/audit complete with `PASS_WITH_MINOR_ISSUES` (both findings fixed); NOT marked `FINAL` because the LlamaParse network blocker (Decision 2026-09-03-15) remains open per explicit Human PI instruction not to waive it.
+- Current Gate: **`READY_WITH_EXTERNAL_BLOCKER`** (Decisions 2026-09-03-17/-18 in `03_DECISION-LOG.md`) — research/synthesis/audit and post-integration review complete; all research-quality findings fixed. NOT marked `FINAL` because the LlamaParse network blocker (Decision 2026-09-03-15) remains open per explicit Human PI instruction not to waive it.
 
 ## Persistent session topology
 
@@ -42,6 +42,7 @@ After integration only:
 - `40_SYNTHESIS/`: Director-approved Traditional Chinese briefing and 10 QA
 - `90_CROSS-SESSION-LOG/`: concise routing/health records
 - `99_FINAL-QA.md`: auditor-only report
+- `98_CLAUDE-REVIEW.md`: second, post-integration read-only Claude CLI review and disposition
 
 ## Source guardrails
 
