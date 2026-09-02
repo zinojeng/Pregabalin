@@ -1,8 +1,8 @@
 # Status
 
 - Updated: 2026-09-03 (Asia/Taipei)
-- Current Wave: `3 SYNTHESIS (Traditional Chinese brief + 10 QA)`
-- Current Gate: `Gate 2 = READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-13)
+- Current Wave: `4 INDEPENDENT AUDIT`
+- Current Gate: `Gate 3 = READY_FOR_AUDIT` (Decision 2026-09-03-16). **Final Gate will NOT be marked FINAL/PASS while the LlamaParse network blocker (Decision 2026-09-03-15) stands — per explicit Human PI instruction, this requirement is not waived.**
 
 ## Completed
 
@@ -36,12 +36,20 @@
 - All three Wave 2 specialists completed the adversarial challenge round. `dpnp-trials-comparative` produced four synthesis-phrasing guardrails against both overselling and over-correcting (Decision 2026-09-03-10), plus a targeted falls/fracture search (population-mismatched leads, routed to pregabalin-safety). `dpnp-guideline-diagnosis` found and transparently corrected a real extraction-tool locator error (Rec-number mislabeling, no clinical content changed — Decision 2026-09-03-11). `dpnp-pregabalin-safety` produced anti-downplaying/anti-overstating guardrail sentences plus a compounded-risk callout and a documentation-depth-asymmetry guardrail (Decision 2026-09-03-12).
 - **Gate 2 declared `READY_WITH_PENDING_ITEMS`** (Decision 2026-09-03-13). Wave 3 (Director synthesis) now authorized to begin.
 
+## Completed (Wave 3)
+
+- Both required synthesis deliverables written: `40_SYNTHESIS/DPNP_Pregabalin_Moderator_Brief_zh-TW.md`, `40_SYNTHESIS/DPNP_10_Insightful_QA_zh-TW.md`. Gate 3 self-check passed (no MEDNOTE leakage, no unsupported reversal-of-nerve-damage language, numeric tokens consistent across both files and the merged evidence tables).
+
 ## Pending gates
 
 - Gate 1: `READY_WITH_PENDING_ITEMS` (partial — see above).
 - Gate 2: `READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-13).
-- Gate 3: Traditional Chinese synthesis and exactly 10 QA internally consistent — in progress.
-- Final Gate: independent read-only QA + PI requirement (Decision 2026-09-03-07: at least one lawful full-text PDF downloaded and LlamaParse-parsed) must be satisfied. As of this update: FDA label PDF lawfully downloaded (SHA-256 logged), but LlamaParse failed 3 consecutive times (tool-specific timeout, not a policy block); ADA Ch.12 PMC PDF correctly declined due to a text/data-mining license restriction. Not yet satisfied — retry/fallback in progress with `dpnp-source-provenance`.
+- Gate 3: `READY_FOR_AUDIT` (Decision 2026-09-03-16).
+- Final Gate: **cannot be FINAL/PASS while the LlamaParse network blocker stands** (Decision 2026-09-03-15, explicit Human PI instruction not to waive). Independent read-only auditor now being launched; expected Final Gate outcome is `READY_WITH_EXTERNAL_BLOCKER` (or `PASS_WITH_MINOR_ISSUES` + open external blocker noted), not plain `PASS`, until the PI confirms network access or provides other instruction.
+
+## Residual blocker (tracked separately from research gates)
+
+- **LlamaParse network block**: `api.cloud.llamaindex.ai` is unreachable from this environment (zero-payload requests stall/timeout identically to real parse attempts; other hosts work normally). Root-caused by `dpnp-source-provenance`, no credentials exposed. Remediation needed: Human PI/operator to verify/restore network egress to `api.cloud.llamaindex.ai` (e.g. check environment network allowlist/firewall config), after which `dpnp-source-provenance` can retry parsing the already-downloaded, lawfully-obtained FDA label PDF (`fulltext-local/`, SHA-256 logged in `10_SOURCES/FULLTEXT_LEDGER.md`) with no new download needed. Interim mitigation: the label's full substantive content is already captured via direct extraction in `20_EVIDENCE/pregabalin-safety/LABELING_FDA.md` and is used in `40_SYNTHESIS/`.
 
 ## Blockers
 
