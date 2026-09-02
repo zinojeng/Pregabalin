@@ -13,12 +13,13 @@
 - Research Charter, ownership, source policy, and sponsor-bias guardrail initialized.
 - Existing global MCP names inventoried; no credential copied into the repository.
 - `academic-research-agents` implementation inspected and classified as architecture-only because core literature/PDF methods contain placeholders.
+- Cross-session health check PASSED: all four persistent peers (`dpnp-source-provenance`, `dpnp-guideline-diagnosis`, `dpnp-trials-comparative`, `dpnp-pregabalin-safety`) located via `ListAgents` and confirmed READY. See `90_CROSS-SESSION-LOG/2026-09-03_STARTUP.md`.
+- Wave 1 dispatched to `dpnp-source-provenance`.
 
 ## In progress
 
-- Persistent session startup and cross-session health check.
-- MedNote source capture.
-- Authoritative guideline and evidence-source registration.
+- `dpnp-source-provenance`: MedNote source capture; authoritative guideline/RCT/regulatory source identification and registration; lawful full-text routing.
+- `dpnp-guideline-diagnosis`, `dpnp-trials-comparative`, `dpnp-pregabalin-safety`: standing by (orientation only) pending Gate 1.
 
 ## Pending gates
 
