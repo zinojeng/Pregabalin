@@ -9,7 +9,7 @@
 - [NEEDS_PI] Intended talk duration, audience mix, and whether QA should be phrased as panel questions, audience questions, or both.
 - [NEEDS_PI] Whether Taiwan local formulary/reimbursement detail is required in the final brief.
 
-- [NEEDS_SOURCE] PI requirement (Decision 2026-09-03-07): at least one lawful full-text PDF (guideline or regulator document) must be downloaded and LlamaParse-parsed before Final Gate. Dispatched to `dpnp-source-provenance`. Best current candidates per `10_SOURCES/FULLTEXT_LEDGER.md`: ADA Standards of Care 2026 Ch.12 (PMC OA) or FDA Pregabalin label (DailyMed).
+- [BLOCKED_FOR_PI, escalated 2026-09-03] PI requirement (Decision 2026-09-03-07): at least one lawful full-text PDF must be downloaded and LlamaParse-parsed before Final Gate. **Status: `dpnp-source-provenance` root-caused a network-egress block to `api.cloud.llamaindex.ai` (zero-payload requests stall identically; other hosts work fine) — this is an environment/infrastructure condition, not resolvable by any peer's own effort (Decision 2026-09-03-15).** ADA Ch.12 PMC PDF was separately, correctly declined on text/data-mining license grounds (unrelated issue). FDA label PDF was lawfully downloaded (SHA-256 logged) but could not be LlamaParse-parsed. Mitigation in place: the label's content is fully captured via direct extraction in `LABELING_FDA.md`. **Requires Human PI decision: confirm/restore network access and authorize a retry, or explicitly waive this requirement for this run.**
 
 ## Wave 1 gaps (from `dpnp-source-provenance`, 2026-09-03, see `10_SOURCES/SOURCE_REGISTER.md` §D)
 
