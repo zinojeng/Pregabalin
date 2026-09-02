@@ -3,6 +3,7 @@
 - Date: 2026-09-03 (Asia/Taipei)
 - Mode: independent, read-only branch review against `origin/main`
 - Scope: all research artifacts added by the Claude Code cross-session run
+- Record owner: primary integrator (the Claude reviewer remained read-only)
 - Critical findings: none
 - Disposition: all high-confidence major/minor findings corrected before push
 

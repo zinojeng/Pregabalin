@@ -19,7 +19,7 @@ Before substantive work, read in order:
 - Cross-session outside, workflow inside. Existing persistent peers must be reached with `ListAgents` and `SendMessage`; do not silently replace an unreachable peer.
 - Repository files are the durable source of truth. Chat messages are the control plane only.
 - Work by Wave and Gate. Do not draft final synthesis before sources and claims are verified.
-- Preserve exact numeric tokens and exact guideline recommendation wording. Flag discrepancies; never silently repair them.
+- Preserve exact numeric tokens, recommendation identifiers, and grades. Preserve exact guideline wording only in lawful local-only source notes or short attributed excerpts; use faithful paraphrase in public-repository tables when redistribution terms are restrictive. Flag discrepancies; never silently repair them.
 - Every important claim must be traceable to a primary source with DOI, PMID, stable URL, publication date, access date, and page/table/section when available.
 - Separate `DIRECT EVIDENCE`, `INDIRECT EVIDENCE`, `GUIDELINE / CONSENSUS`, `OBSERVATIONAL EVIDENCE`, `MECHANISTIC SUPPORT`, `EXPERT INTERPRETATION`, and `INSUFFICIENT EVIDENCE`.
 - Use Traditional Chinese for narrative outputs where practical. Keep drug names, scales, guideline names, trial acronyms, and technical terms in original English when that is clearer.
@@ -48,6 +48,7 @@ Before substantive work, read in order:
 | `dpnp-pregabalin-safety` | `20_EVIDENCE/pregabalin-safety/` |
 | `dpnp-source-provenance` | `10_SOURCES/`, source register, full-text acquisition and parse ledger |
 | Independent auditor | `99_FINAL-QA.md` only |
+| Primary integrator / independent Claude review record | `98_CLAUDE-REVIEW.md` only |
 
 The Director may integrate approved outputs into `40_SYNTHESIS/`. Specialists must not edit another role's owned files.
 
