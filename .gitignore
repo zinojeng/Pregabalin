@@ -3,6 +3,7 @@
 .env.*
 !.env.example
 .claude/settings.local.json
+.claude/worktrees/
 .metadata_cache/
 **/fulltext-local/
 **/restricted-fulltext/
