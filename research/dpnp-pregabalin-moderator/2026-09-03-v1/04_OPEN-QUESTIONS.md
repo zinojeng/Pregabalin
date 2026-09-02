@@ -9,6 +9,8 @@
 - [NEEDS_PI] Intended talk duration, audience mix, and whether QA should be phrased as panel questions, audience questions, or both.
 - [NEEDS_PI] Whether Taiwan local formulary/reimbursement detail is required in the final brief.
 
+- [NEEDS_SOURCE] PI requirement (Decision 2026-09-03-07): at least one lawful full-text PDF (guideline or regulator document) must be downloaded and LlamaParse-parsed before Final Gate. Dispatched to `dpnp-source-provenance`. Best current candidates per `10_SOURCES/FULLTEXT_LEDGER.md`: ADA Standards of Care 2026 Ch.12 (PMC OA) or FDA Pregabalin label (DailyMed).
+
 ## Wave 1 gaps (from `dpnp-source-provenance`, 2026-09-03, see `10_SOURCES/SOURCE_REGISTER.md` §D)
 
 - [NEEDS_SOURCE] Taiwan TFDA Pregabalin/Lyrica label and safety communications — search interrupted, not yet completed. Owner for closing: `dpnp-source-provenance` and/or `dpnp-pregabalin-safety`.

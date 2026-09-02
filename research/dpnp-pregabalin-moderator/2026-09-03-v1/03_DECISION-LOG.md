@@ -39,3 +39,11 @@
 - Reason: All six sources (T1-T6) were opened by the peer at their own primary bibliographic record (PubMed/Crossref), not secondary snippets; numeric tokens copied verbatim; evidence correctly classified as DIRECT vs INDIRECT (T3 pregabalin/DPN-specific claims are class-pooled/mixed-etiology extrapolation, not direct). This is exactly the kind of finding the Research Charter (Primary question 4-5) and CLAUDE.md sponsor-bias rule require to be surfaced, not the kind that gets normalized away by narrative convenience.
 - Affected files: `04_OPEN-QUESTIONS.md` (Wave 2 gaps + counter-bias findings section), `90_CROSS-SESSION-LOG/2026-09-03_STARTUP.md`.
 - Approved by: Research Director.
+
+## Decision 2026-09-03-07 — PI requirement: at least one lawful full-text PDF must be downloaded and LlamaParse-parsed before Final Gate
+
+- Decision: Per explicit Human PI instruction (2026-09-03), Final Gate may not be declared until at least one lawfully acquired, decision-relevant guideline or regulator PDF has actually been downloaded locally and parsed PDF-to-Markdown via the globally configured `llamaparse` MCP — not merely identified as a lawful route. Dispatched to `dpnp-source-provenance` (owner of `10_SOURCES/` and the full-text ledger) rather than performed by the Director, per the Persistent Specialist Rule. No API key or credential may be exposed/persisted; no Sci-Hub/paywall bypass; restricted full text stays local/ignored; `10_SOURCES/FULLTEXT_LEDGER.md` must record URL, license, checksum, parser used, and output path for a completed acquisition, or an explicit `BLOCKED` reason if not achievable this wave. Current Wave 2 work (guideline-diagnosis, trials-comparative, pregabalin-safety verification) continues in parallel and is not paused for this.
+- Taxonomy: `NEEDS_ANALYST` reframed as a direct PI directive — not optional, but scoped as an addition, not a blocker to ongoing Wave 2.
+- Reason: PI-level requirement for demonstrated lawful full-text acquisition capability as part of Final QA, distinct from the discovery-only leads already logged.
+- Affected files: `10_SOURCES/FULLTEXT_LEDGER.md`, `99_FINAL-QA.md` (future — Final Gate checklist item).
+- Approved by: Human PI (relayed by Research Director).
