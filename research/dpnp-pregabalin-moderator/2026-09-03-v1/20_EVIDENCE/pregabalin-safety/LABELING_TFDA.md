@@ -83,6 +83,17 @@ Negligible metabolism (<2% recovered as metabolites in urine), no plasma protein
 
 **表3 在糖尿病周邊神經病變引起神經性疼痛的對照性試驗中不良反應的發生率** (75/150/300/600 mg/天 + 所有PGB[N=979] + 安慰劑[N=459]):
 - 導致停藥: 9% LYRICA vs 4% 安慰劑; 最常導致停藥者為頭暈(3%)與嗜睡(2%)。
-- Selected 所有PGB% vs 安慰劑%: 頭暈 21 vs 5；嗜睡 12 vs 3；周邊水腫 9 vs 2；體重增加 4 vs 0；水腫 2 vs 0；運動失調 3 vs 1；視力模糊 4 vs 2；口乾 5 vs 1；精神紊亂 2 vs 1；低血糖症 2 vs 1 — numerically identical to FDA Table 4.
+- **表3 full dose-stratified rows re-verified against the source PDF on 2026-09-03 (auditor-flagged traceability correction).** Columns are 75/150/300/600 mg/天 / 所有PGB / 安慰劑, all in %:
+  - 頭暈 (dizziness): 8 / 9 / 23 / 29 / 21 / 5
+  - 嗜睡 (somnolence): 4 / 6 / 13 / 16 / 12 / 3
+  - 周邊水腫 (peripheral edema): 4 / 6 / 9 / 12 / 9 / 2
+  - 體重增加 (weight gain): 0 / 4 / 4 / 6 / 4 / 0
+  - 水腫 (edema): 0 / 2 / 4 / 2 / 2 / 0
+  - 運動失調 (ataxia): 6 / 1 / 2 / **4** / 3 / 1 — matches FDA Table 4 exactly at every dose; the "7% at 600 mg/day" figure that briefly appeared in `SAFETY_TOPICS.md` does not appear in this table and has been corrected there.
+  - 視力模糊 (blurred vision): 3 / 1 / 3 / 6 / 4 / 2
+  - 口乾 (dry mouth): 3 / 2 / 5 / 7 / 5 / 1
+  - 精神紊亂 (confusion): 0 / 1 / 2 / 3 / 2 / 1
+  - 低血糖症 (hypoglycemia): 1 / 3 / 2 / 1 / 2 / 1
+  - Numerically identical, mg-for-mg and %-for-%, to FDA Table 4 (`LABELING_FDA.md`) at every dose level for every row checked — strong cross-source concordance, same underlying pivotal trial data, not independent replication.
 
 Bridging PHN-trial narrative (same page range, not DPN-specific — flagged to avoid misattribution as in the FDA-label file): 12.4% pregabalin-treated vs 9.0% placebo-treated had ≥1 severe adverse reaction; 8% vs 4.3% had ≥1 severe treatment-related adverse reaction.
