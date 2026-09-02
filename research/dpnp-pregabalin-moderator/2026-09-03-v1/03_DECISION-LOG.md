@@ -142,4 +142,4 @@
 - Taxonomy: `VERIFIED_AND_REPLACE` (documentation/provenance correction; no clinical conclusion changed).
 - Reason: These findings were directly reproducible from the committed files and project policy. Correcting them reduces redistribution risk, prevents an old label from being parsed as though it supported current evidence, and closes evidence-to-synthesis consistency gaps.
 - Final Gate remains `READY_WITH_EXTERNAL_BLOCKER`: this decision does not waive or resolve the required LlamaParse execution.
-- Approved by: Primary integrator after independent Claude CLI review.
+- Approved by: One-time primary integrator after independent Claude CLI review.
