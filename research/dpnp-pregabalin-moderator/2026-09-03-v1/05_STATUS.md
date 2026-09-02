@@ -1,8 +1,8 @@
 # Status
 
 - Updated: 2026-09-03 (Asia/Taipei)
-- Current Wave: `2 METHODS/EVIDENCE — complete, entering Challenge Round → Gate 2`
-- Current Gate: `Gate 1 = READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-05); Gate 2 not yet declared
+- Current Wave: `3 SYNTHESIS (Traditional Chinese brief + 10 QA)`
+- Current Gate: `Gate 2 = READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-13)
 
 ## Completed
 
@@ -31,12 +31,17 @@
 - `dpnp-pregabalin-safety`: Wave 2 label verification complete (Decision 2026-09-03-09) — FDA label (Rev. 04/2025) and TFDA-stamped Taiwan insert both `ACCESS_VERIFIED`, numerically concordant on dosing/renal-adjustment/AE tables. All dispatched safety topics covered with locators. Two open items flagged, not guessed: Taiwan controlled-drug schedule unresolved; HLA-B*1502 mention identified as a likely template artifact and excluded from use.
 - Wave 2 dispatch (task #3) is now complete for all three specialists.
 
+## Completed (Challenge Round / Gate 2)
+
+- All three Wave 2 specialists completed the adversarial challenge round. `dpnp-trials-comparative` produced four synthesis-phrasing guardrails against both overselling and over-correcting (Decision 2026-09-03-10), plus a targeted falls/fracture search (population-mismatched leads, routed to pregabalin-safety). `dpnp-guideline-diagnosis` found and transparently corrected a real extraction-tool locator error (Rec-number mislabeling, no clinical content changed — Decision 2026-09-03-11). `dpnp-pregabalin-safety` produced anti-downplaying/anti-overstating guardrail sentences plus a compounded-risk callout and a documentation-depth-asymmetry guardrail (Decision 2026-09-03-12).
+- **Gate 2 declared `READY_WITH_PENDING_ITEMS`** (Decision 2026-09-03-13). Wave 3 (Director synthesis) now authorized to begin.
+
 ## Pending gates
 
 - Gate 1: `READY_WITH_PENDING_ITEMS` (partial — see above).
-- Gate 2: not yet declared. Next step: adversarial challenge round across all three Wave 2 specialists (why might any conclusion be wrong or read as sponsor bias), then reconciliation of any conflicts before Gate 2 sign-off.
-- Gate 3: Traditional Chinese synthesis and exactly 10 QA internally consistent.
-- Final Gate: independent read-only QA + PI requirement (Decision 2026-09-03-07: at least one lawful full-text PDF downloaded and LlamaParse-parsed) must be satisfied.
+- Gate 2: `READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-13).
+- Gate 3: Traditional Chinese synthesis and exactly 10 QA internally consistent — in progress.
+- Final Gate: independent read-only QA + PI requirement (Decision 2026-09-03-07: at least one lawful full-text PDF downloaded and LlamaParse-parsed) must be satisfied. As of this update: FDA label PDF lawfully downloaded (SHA-256 logged), but LlamaParse failed 3 consecutive times (tool-specific timeout, not a policy block); ADA Ch.12 PMC PDF correctly declined due to a text/data-mining license restriction. Not yet satisfied — retry/fallback in progress with `dpnp-source-provenance`.
 
 ## Blockers
 
