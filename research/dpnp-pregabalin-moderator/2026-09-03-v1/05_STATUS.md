@@ -22,8 +22,11 @@
 
 - `dpnp-source-provenance`: closing remaining gaps in its own scope — Taiwan TFDA and FDA/DailyMed Pregabalin label discovery, ADA Ch.12 DOI confirmation.
 - `dpnp-guideline-diagnosis`: open and verify ADA 2026 Ch.12, AAN 2022 update, and Toronto Consensus at their primary records with exact quotations/locators.
-- `dpnp-trials-comparative`: open and verify Freeman 2008, Soliman 2025, Mallick-Searle 2024, the 2026 Frontiers combination SR-MA, and locate COMBO-DN/OPTION-DM at primary sources.
 - `dpnp-pregabalin-safety`: independently search for the Taiwan/FDA Pregabalin label rather than wait on source-provenance; verify labeling and safety evidence.
+
+## Completed (Wave 2, partial)
+
+- `dpnp-trials-comparative`: Wave 2 evidence table complete (`20_EVIDENCE/trials-comparative/01_EVIDENCE-TABLE.md`) — T1 Freeman 2008, T2 Frontiers 2026 combo SR-MA, T3 Soliman/NeuPSIG 2025, T4 Mallick-Searle 2024 (narrative review), T5 COMBO-DN, T6 OPTION-DM all `ACCESS_VERIFIED` at primary record. Key counter-bias findings recorded (Decision 2026-09-03-06): α2δ-ligand class NNT ranks numerically worst of the three first-line classes per Soliman/NeuPSIG 2025; COMBO-DN found no significant combination-vs-monotherapy superiority; OPTION-DM found no pregabalin-pathway superiority over amitriptyline/duloxetine pathways. Standing by for Gate 2 reconciliation with guideline-diagnosis and pregabalin-safety. `NEEDS_FULLTEXT`/`NEEDS_SOURCE` gaps logged, non-blocking.
 
 ## Pending gates
 
