@@ -65,7 +65,18 @@ Numeric tokens preserved exactly as printed; **identical to the Taiwan label's T
 
 Controlled trials in adults with neuropathic pain associated with diabetic peripheral neuropathy (N=1438 total across arms: 75/150/300/600 mg/day + All PGB [N=979] + Placebo [N=459]):
 - Discontinuation for adverse reactions: 9% LYRICA vs 4% placebo; most common reasons: dizziness (3%), somnolence (2%).
-- Selected Table 4 rates (All PGB% vs Placebo%): dizziness 21 vs 5; somnolence 12 vs 3; peripheral edema 9 vs 2; weight gain 4 vs 0; edema 2 vs 0; ataxia 3 vs 1; blurry vision 4 vs 2; dry mouth 5 vs 1; confusion 2 vs 1; hypoglycemia 2 vs 1 (full dose-stratified table preserved in source PDF; do not re-derive figures not listed here without re-opening the source).
+- **Table 4 (p.13), full dose-stratified rows re-verified against the source PDF on 2026-09-03 (auditor-flagged traceability correction — see `SAFETY_TOPICS.md` challenge-round/audit-response note).** Columns are 75 mg/day [N=77] / 150 mg/day [N=212] / 300 mg/day [N=321] / 600 mg/day [N=369] / All PGB* [N=979] / Placebo [N=459], all in %:
+  - Dizziness: 8 / 9 / 23 / 29 / 21 / 5
+  - Somnolence: 4 / 6 / 13 / 16 / 12 / 3
+  - Peripheral edema: 4 / 6 / 9 / 12 / 9 / 2
+  - Weight gain: 0 / 4 / 4 / 6 / 4 / 0
+  - Edema: 0 / 2 / 4 / 2 / 2 / 0
+  - Ataxia: 6 / 1 / 2 / **4** / 3 / 1 — **correction: an earlier draft of `SAFETY_TOPICS.md` stated "7% at 600 mg/day"; the source table gives 4% at 600 mg/day (All PGB 3%, Placebo 1%). The 7% figure does not appear in this table or in Table 5 (PHN) or Table 6 (seizures) at any dose; it has been corrected in `SAFETY_TOPICS.md` and should be treated as a transcription error, not a second data point.**
+  - Blurry vision: 3 / 1 / 3 / 6 / 4 / 2
+  - Dry mouth: 3 / 2 / 5 / 7 / 5 / 1
+  - Confusion: 0 / 1 / 2 / 3 / 2 / 1
+  - Hypoglycemia: 1 / 3 / 2 / 1 / 2 / 1
+  - (Full table also includes asthenia, accidental injury, back pain, chest pain, face edema, constipation, flatulence, neuropathy, vertigo, euphoria, incoordination, thinking abnormal, tremor, abnormal gait, amnesia, nervousness, dyspnea, abnormal vision rows — preserved in the source PDF; re-open the source rather than re-deriving any row not listed above.)
 - 12.4% pregabalin-treated vs 9.0% placebo-treated patients (bridging PHN-trial summary statement on the same page range) had ≥1 severe adverse reaction; 8% vs 4.3% had ≥1 severe treatment-related adverse reaction (this specific 12.4/9.0/8/4.3 statement appears in the PHN-trials narrative, not the DPN-specific narrative — flagged here so it is not misattributed to the DPN population by a later drafting pass).
 
 ## Drug interactions (Section 7, p.23)
