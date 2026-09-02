@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+.metadata_cache/
+**/fulltext-local/
+**/restricted-fulltext/
+**/.llamaparse-cache/
+**/downloads/
+*.log
