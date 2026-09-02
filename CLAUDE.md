@@ -48,9 +48,10 @@ Before substantive work, read in order:
 | `dpnp-pregabalin-safety` | `20_EVIDENCE/pregabalin-safety/` |
 | `dpnp-source-provenance` | `10_SOURCES/`, source register, full-text acquisition and parse ledger |
 | Independent auditor | `99_FINAL-QA.md` only |
-| Primary integrator / independent Claude review record | `98_CLAUDE-REVIEW.md` only |
+| One-time primary integrator (orchestration layer; not a persistent peer) | `98_CLAUDE-REVIEW.md` only |
 
 The Director may integrate approved outputs into `40_SYNTHESIS/`. Specialists must not edit another role's owned files.
+The one-time primary integrator is the external orchestration layer that runs the read-only review and records its disposition; it is ephemeral and must not be addressed through `ListAgents` or `SendMessage`.
 
 ## Cross-session message schema
 
