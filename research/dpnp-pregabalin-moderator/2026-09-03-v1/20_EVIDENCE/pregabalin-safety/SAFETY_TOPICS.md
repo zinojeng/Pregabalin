@@ -1,0 +1,65 @@
+# Pregabalin Safety and Implementation — Topic Summary (Wave 2)
+
+Owner: `dpnp-pregabalin-safety`. Prepared 2026-09-03 in response to Director's Wave 2 dispatch. All statements below are sourced to `LABELING_FDA.md` and/or `LABELING_TFDA.md` (both `ACCESS_VERIFIED` primary regulatory documents opened directly this session) unless otherwise marked. Evidence-tier tags follow the CLAUDE.md taxonomy. This file is a topic index for drafting; it does not replace the verbatim source files, which retain the exact numeric tokens and locators.
+
+## 1. Dosing/titration for DPN — `GUIDELINE/LABEL — DIRECT EVIDENCE`
+
+FDA and TFDA labels agree, mg-for-mg: begin 150 mg/day (75 mg BID or 50 mg TID), titrate to 300 mg/day within 1 week per efficacy/tolerability; 300 mg/day is the labeled ceiling for CLcr ≥60 mL/min; 600 mg/day was studied but is **not recommended** (no demonstrated added benefit, worse tolerability, dose-dependent adverse reactions). See `LABELING_FDA.md` §2.2, `LABELING_TFDA.md` §3.1.1.
+
+## 2. Renal dose adjustment — `GUIDELINE/LABEL — DIRECT EVIDENCE`
+
+Both labels carry the identical Cockcroft-Gault-based table (CLcr ≥60 / 30–60 / 15–30 / <15 mL/min bands; supplemental post-hemodialysis dosing). See `LABELING_FDA.md` §2.7 Table 2 and `LABELING_TFDA.md` §3.1.6 表1 for the full table — reproduced there rather than here to avoid transcription drift across three copies.
+
+## 3. Dizziness/somnolence — `DIRECT EVIDENCE` (RCT-pooled label data)
+
+Dizziness 30% vs 8% placebo; somnolence 23% vs 8% placebo (all-indication pooled adult trials); DPN-specific trials: dizziness 21% (all PGB) vs 5% placebo, somnolence 12% vs 3% placebo, rising to 29%/16% at 600 mg/day. Most frequent reasons for discontinuation. Persisted to last dose in a substantial minority (dizziness 30%, somnolence 42%, of those affected). Counsel on driving/machinery impairment. Sources: `LABELING_FDA.md` §5.6, Table 4; `LABELING_TFDA.md` §5.1.5, 表3.
+
+## 4. Falls/cognition (older adults) — `DIRECT EVIDENCE` for adjacent signals + `INSUFFICIENT EVIDENCE` for a DPN-specific falls endpoint
+
+The labels do not report a pooled falls incidence for the DPN population specifically. Directly relevant label-level signals that plausibly mediate fall risk: dizziness/somnolence rates above; ataxia (DPN trials: 3% all-PGB vs 1% placebo, rising to 7% at 600 mg/day); abnormal gait; blurred vision (7% vs 2%); geriatric-use section notes DPN trials included 246 patients 65–74y and 73 patients ≥75y with "no overall differences in safety and efficacy" reported at the pooled level (not age-stratified adverse-event rates) — this is a **GUIDELINE/LABEL summary statement, not a stratified falls analysis**, and should not be read as evidence of no elevated fall risk in older adults. The fibromyalgia-trial geriatric subgroup (a different indication) did show more frequent dizziness/balance disorder/coordination-abnormal/lethargy in patients ≥65y — flagged as indication-specific and not directly transferable to DPN. **No dedicated fall-risk or fracture-outcome study for pregabalin in DPN was located by this session; mark as an open question for `dpnp-trials-comparative` / `04_OPEN-QUESTIONS.md` if a dedicated falls/fracture observational study is needed.** Sources: `LABELING_FDA.md` §5.6/5.10/8.5, Table 4; `LABELING_TFDA.md` §5.1.5/5.1.10/6.5.
+
+## 5. Edema/weight gain — `DIRECT EVIDENCE`
+
+Peripheral edema 6% vs 2% placebo (all-indication); DPN trials 9% (all PGB) vs 2% placebo, rising to 12% at 600 mg/day. Weight gain ≥7% of baseline in 9% vs 2% placebo; in diabetic patients specifically, mean +1.6 kg (range −16 to +16 kg) vs +0.3 kg (range −10 to +9 kg) placebo, and +5.2 kg average in a 333-patient ≥2-year diabetic cohort. Weight gain did not appear associated with loss of glycemic control by HbA1c in longer-term open-label diabetic-patient data (label's own caveat: not systematically/prospectively assessed for this purpose). **Thiazolidinedione co-administration materially increases both edema (19% vs 8% LYRICA-alone vs 3% thiazolidinedione-alone) and weight gain (7.5% vs 4% vs 0%)** — a clinically actionable combination-risk finding for a diabetic population where thiazolidinediones may be co-prescribed. Sources: `LABELING_FDA.md` §5.7–5.8; `LABELING_TFDA.md` §5.1.7–5.1.8.
+
+## 6. Heart-failure considerations — `GUIDELINE/LABEL — DIRECT EVIDENCE` (caution, not contraindication)
+
+Both labels: "limited data" on NYHA Class III/IV congestive heart failure patients → "exercise caution when using LYRICA in these patients." This is a general caution independent of the thiazolidinedione-specific edema/weight signal above, though the two compound when both risk factors co-occur (diabetic patient, thiazolidinedione use, reduced cardiac reserve). Short-term trials in patients *without* clinically significant heart/peripheral-vascular disease found no apparent association between peripheral edema and cardiovascular complications (including CHF) and no renal/hepatic laboratory correlate — this reassuring finding applies to a lower-risk trial population and should not be extended to NYHA III/IV patients, who were not well represented. Sources: `LABELING_FDA.md` §5.7; `LABELING_TFDA.md` §5.1.7.
+
+## 7. Respiratory depression / CNS-depressant combinations (incl. opioids) — `DIRECT EVIDENCE` (label Warnings and Precautions, not a boxed warning)
+
+Current (04/2025) FDA label Section 5.5 and the TFDA insert's §5.1.4 carry near-identical text: case reports, human studies, and animal studies associate pregabalin with serious, life-threatening, or fatal respiratory depression when co-administered with CNS depressants (including opioids) or in patients with underlying respiratory impairment; recommend monitoring, considering a low starting dose, and having a reduction/withdrawal plan for the CNS depressant(s) if it occurs. Postmarketing section separately confirms fatal cases with opioid/CNS-depressant co-use. A narrower PK/PD interaction study (co-administration with oxycodone, lorazepam, or ethanol) found additive cognitive/motor impairment but "no clinically important effects on respiration" in that specific controlled study — **this narrower, reassuring finding does not override the broader case-report/postmarketing-based warning** and both are preserved together to prevent selective citation. This label content is consistent with, and is treated here as superseding, FDA's December 2019 gabapentinoid respiratory-depression safety communication (that 2019 announcement's own page could not be independently re-verified at a stable fda.gov URL this session — search-engine secondary summaries described it consistently, but the current label text itself is the stronger, directly-opened primary source and is what is cited). Sources: `LABELING_FDA.md` §5.5, §6.2, §7; `LABELING_TFDA.md` §5.1.4, §7.
+
+## 8. Withdrawal/tapering — `DIRECT EVIDENCE`
+
+Taper over a minimum of 1 week when discontinuing, in both labels, for both seizure-risk and general-withdrawal-symptom reasons. Reported abrupt/rapid-discontinuation symptoms in clinical trials: insomnia, nausea, headache, anxiety, hyperhidrosis, diarrhea. Postmarketing withdrawal reports (broader list, FDA label only, not separately itemized in the TFDA insert's shorter §5.1.6): seizures, depression, suicidal ideation/behavior, agitation, confusion, disorientation, psychotic symptoms, pain, sweating, tremor, dizziness, malaise. Sources: `LABELING_FDA.md` §5.4, §6.2, §9.3; `LABELING_TFDA.md` §5.1.6, §5.2.
+
+## 9. Misuse/dependence/scheduling — `DIRECT EVIDENCE` (US) / `NEEDS_SOURCE` (Taiwan)
+
+**United States:** LYRICA is a **Schedule V controlled substance** (FDA label §9.1). Recreational-user study rated 450 mg similarly to diazepam 30 mg on subjective "good drug effect"/"high"/"liking"; euphoria reported by 4% of LYRICA-treated vs 1% placebo-treated patients across >5500 trial patients (range 1–12% in some populations). Abrupt-discontinuation symptom pattern is consistent with physical dependence.
+
+**Taiwan:** the TFDA-stamped package insert opened this session does **not** state a 管制藥品 (controlled-drug) schedule, and this session could not independently confirm pregabalin's status (if any) in Taiwan's four-tier 管制藥品分級 system via TFDA's own site this wave (see provenance note in `LABELING_TFDA.md`). **This is flagged as `NEEDS_SOURCE` for `04_OPEN-QUESTIONS.md` — do not state a Taiwan controlled-drug schedule for pregabalin in `40_SYNTHESIS/` until a primary TFDA 管制藥品品項一覽表 or 公告 is opened directly.** Sources: `LABELING_FDA.md` §9.1–9.3; `LABELING_TFDA.md` §5.2 and provenance note.
+
+## 10. Pregnancy/lactation — `DIRECT EVIDENCE` (label-cited observational data; label states these are not RCTs)
+
+Pregnancy: observational database studies show a possible small increase in overall major-birth-defect rate with no consistent/specific pattern; largest cited study — 2,700 pregabalin-monotherapy first-trimester pregnancies vs 3,063,251 unexposed, prevalence ratio 1.14 (95% CI 0.96–1.35); two smaller database studies gave adjusted RR 0.87 (95% CI 0.53–1.42, n=353) and 1.26 (95% CI 0.64–2.49, n=118, CI crosses null). U.S. background risk: major birth defects 2–4%, miscarriage 15–20%. Enrollment in the NAAED Pregnancy Registry (1-888-233-2334) is advised. Neonatal withdrawal syndrome has been reported with gabapentinoid + opioid exposure near delivery (not isolated to pregabalin alone — no comparative epidemiologic study exists for pregabalin-only exposure). Lactation: pregabalin reaches breast milk at ~76% of maternal plasma concentration; estimated infant dose ~7% of maternal weight-adjusted dose; breastfeeding **not recommended** during treatment, based on a theoretical tumorigenicity concern (mouse hemangiosarcoma finding, §5.9/§5.1.9) rather than a demonstrated human harm. Sources: `LABELING_FDA.md` §8.1–8.2; `LABELING_TFDA.md` §6.1–6.2. Both labels present numerically identical figures — treated as a single well-corroborated source lineage, not independent replication.
+
+## 11. Monitoring and patient-selection tradeoffs — `EXPERT INTERPRETATION` scaffolding around the `DIRECT EVIDENCE` above
+
+Points a clinician-facing brief should synthesize (each already evidenced above, cross-referenced rather than restated):
+- Renal function (CLcr) must be estimated before dosing and reassessed if it changes — §2/§7.
+- CNS-depressant polypharmacy (opioids especially, also benzodiazepines/alcohol) requires explicit risk-benefit discussion, low starting dose, and monitoring for sedation/respiratory depression — §7.
+- Diabetic patients on a thiazolidinedione need explicit edema/weight/heart-failure counseling before or when starting pregabalin — §5.
+- NYHA III/IV heart failure is a caution flag, not an absolute contraindication in the label — §6.
+- Discontinuation must always be tapered (≥1 week), regardless of reason for stopping — §8.
+- Pregnancy-capable patients and reproductive-potential males should be counseled per §10 (registry enrollment; the male-fertility sperm-concentration signal, reversible in most subjects).
+- History of drug misuse/abuse warrants extra vigilance under the U.S. Schedule V classification; Taiwan-specific scheduling remains unresolved (§9).
+
+**Sponsor-bias guardrail applied to this file:** every safety topic above is stated with its full adverse-event or harm profile from the label itself (not from promotional material), and no comparative superiority claim over other guideline-supported drug classes (SNRIs, TCAs, gabapentin, sodium-channel blockers) is made here — comparative efficacy/safety framing is `dpnp-trials-comparative`'s ownership, not this file's. This file also does not claim analgesic therapy reverses nerve damage; it addresses pain/tolerability/harm management only, consistent with `01_RESEARCH-CHARTER.md`.
+
+## Open items for the Director / other roles
+
+1. **[NEEDS_SOURCE]** Taiwan 管制藥品 (controlled-drug) schedule status for pregabalin — not resolved this wave (see §9 above).
+2. **[NEEDS_SOURCE, secondary priority]** FDA's December 2019 gabapentinoid respiratory-depression Drug Safety Communication could not be reached at a stable, directly-verifiable fda.gov URL this session; the current (04/2025) label's own Section 5.5 is used as the primary source instead and is sufficient for citation purposes, but a session with better fda.gov access could still independently confirm the original communication if the Director wants it as a separate citation.
+3. A dedicated falls/fracture observational study specific to pregabalin in DPN was not located — flagged in §4 above as a gap `dpnp-trials-comparative` may be better positioned to search for (systematic reviews/observational cohorts, rather than the product label).
+4. The HLA-B\*1502 statement in the VGHTPE patient leaflet is very likely a shared-template artifact from carbamazepine-class AED leaflets, not a pregabalin-specific requirement — flagged in `LABELING_TFDA.md`; recommend excluding it from any pregabalin-specific counseling checklist in `40_SYNTHESIS/` unless independently corroborated.
