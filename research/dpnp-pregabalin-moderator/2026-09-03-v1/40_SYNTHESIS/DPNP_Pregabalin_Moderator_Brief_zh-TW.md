@@ -20,7 +20,7 @@ PROJECT: `dpnp-pregabalin-moderator` ｜ RUN: `2026-09-03-v1` ｜ 定稿日期�
 ## 1. 執行摘要
 
 1. **診斷面**：DPN／DSPN 的臨床診斷仍以 **Toronto Consensus（Tesfaye et al. 2010, *Diabetes Care*）** 的 Possible/Probable/Confirmed/Subclinical 分級為核心架構，2026 年並無正式的多學會繼任共識取代它；ADA Standards of Care 2026 第 12 章與 AAN 2022 更新則提供現行的篩檢時程與治療建議。主持人應強調：**排除其他病因**（甲狀腺功能低下、B12 缺乏、腎病、酒精、化療藥物、感染等）與辨識 **atypical/red-flag 特徵**（急性/亞急性起病、非長度依賴型、不對稱、運動神經受累明顯）是診斷的必要步驟，而非可略過的形式。
-2. **治療定位面（最重要的平衡點）**：**兩份現行操作中的指引（ADA 2026 Rec 12.22、AAN 2022 Rec 4）都是以「藥物類別」（gabapentinoids、SNRIs、TCAs、sodium-channel blockers）給予同等級建議，並未將 Pregabalin 單獨列為優於同類別其他藥物。** 唯一給予 Pregabalin 藥物特異性 Level A 等級的 2011 年版 AAN 指引，**已被官方標註為 [RETIRED]（已退役）**。這是本簡報最核心的贊助偏誚防範重點：任何「Pregabalin 具 Grade A 證據」的陳述，若未註明是引用已退役的 2011 版本，即屬誤導。
+2. **治療定位面（最重要的平衡點）**：**兩份現行操作中的指引（ADA 2026 Rec 12.22、AAN 2022 Rec 4）都是以「藥物類別」（gabapentinoids、SNRIs、TCAs、sodium-channel blockers）給予同等級建議，並未將 Pregabalin 單獨列為優於同類別其他藥物。** 唯一給予 Pregabalin 藥物特異性 Level A 等級的 2011 年版 AAN 指引，**已被官方標註為 [RETIRED]（已退役）**。這是本簡報最核心的贊助偏誤防範重點：任何「Pregabalin 具 Grade A 證據」的陳述，若未註明是引用已退役的 2011 版本，即屬誤導。
 3. **相對療效面**：現有直接頭對頭證據（**COMBO-DN**、**OPTION-DM** 兩項大型 RCT）**均未顯示 Pregabalin-based 治療優於 duloxetine-based 或 amitriptyline-based 治療**；一項獨立、非藥廠贊助的 NeuPSIG 系統性回顧（Soliman et al. 2025, *Lancet Neurology*）將 Pregabalin 與 gabapentin 合併為 "α2δ-ligands" 類別計算 NNT，其數值（8.9）在數字上**劣於** TCAs（4.6）與 SNRIs（7.4）,雖三者指引建議強度相同。
 4. **安全面**：Pregabalin 的仿單（FDA 2025/04 版、Taiwan TFDA 版本，兩者數值高度一致）記載了完整的劑量依賴性不良反應（頭暈、嗜睡、周邊水腫、體重增加）、**呼吸抑制警語（與 CNS 抑制劑併用時，屬 Warnings and Precautions 而非 Boxed Warning，但仍可致命）**、**美國 Schedule V 管制藥品**分類、停藥須逐漸減量（至少一週）等重要臨床要點。這些多數為 **gabapentinoid 類別共有**的風險，而非 Pregabalin 獨有——不應被誤讀為「Pregabalin 比其他藥物類別更危險」。
 5. **合併治療面**：Pregabalin+duloxetine 合併治療的證據（2026 年 Frontiers SR-MA）為 **GRADE 低確定性**、僅 3 篇 RCT、471 名病人，**不足以作為常規合併治療的穩健建議基礎**；COMBO-DN 與 OPTION-DM 兩項大型 RCT 亦未證實合併治療在主要療效指標上顯著優於高劑量單一治療。
@@ -130,7 +130,7 @@ AAN 2022 Rec 7 建議：**以有效劑量治療約 12 週**無顯著止痛效果
 
 **合併治療的證據強度需誠實呈現**（`INDIRECT EVIDENCE`/`DIRECT EVIDENCE` 但確定性低）：
 - **COMBO-DN**（Tesfaye et al. 2013, *Pain* 154:2616-2625, PMID 23732189，`DIRECT EVIDENCE`，DPN 專屬頭對頭 RCT）：duloxetine+pregabalin 合併治療**在主要療效指標上並未顯著優於高劑量單一治療**（P=0.370）；一項未校正多重比較之探索性分析顯示 duloxetine 60mg 優於 pregabalin 300mg（P<0.001，**僅為探索性、非確認性結果**，不應過度推論為「duloxetine 已證實優於 pregabalin」）。
-- **OPTION-DM**（Tesfaye et al. 2022, *Lancet* 400:680-690, PMID 36007534，`DIRECT EVIDENCE`，英國三路徑交叉 RCT，N=130 完成分析 84 人）：amitriptyline-based、pregabalin-based、duloxetine-based 三種治療路徑**在第 16 週療效相近，路徑間比較均未達統計顯著差異**（信賴區間皆包含 0）——**正確表述為「三路徑無顯著差異」，而非「pregabalin 表現較差」或「pregabalin 較優」**。合併期（第 6 週後加藥）疼痛改善優於維持單一治療，但此為**治療前後比較**而非安慰劑對照之合併 vs 單一治療隨機比較。
+- **OPTION-DM**（Tesfaye et al. 2022, *Lancet* 400:680-690, PMID 36007534，`DIRECT EVIDENCE`，英國三路徑交叉 RCT，N=140 隨機分派，130 人至少開始一個治療路徑，84 人完成 ≥2 路徑並納入主要療效分析）：amitriptyline-based、pregabalin-based、duloxetine-based 三種治療路徑**在第 16 週療效相近，路徑間比較均未達統計顯著差異**（信賴區間皆包含 0）——**正確表述為「三路徑無顯著差異」，而非「pregabalin 表現較差」或「pregabalin 較優」**。合併期（第 6 週後加藥）疼痛改善優於維持單一治療，但此為**治療前後比較**而非安慰劑對照之合併 vs 單一治療隨機比較。
 - **2026 年 Frontiers SR-MA**（pregabalin+duloxetine，DOI 10.3389/fendo.2026.1750441，`DIRECT EVIDENCE` 但 **GRADE 低確定性**）：合併治療短期疼痛分數優於單一治療（MD −1.82, 95% CI −2.10 to −1.54），但僅 **3 篇 RCT、471 名病人（僅 2 篇可合併主要指標）**，安全性資料因試驗數少、精確度不足而**仍不確定**。**應完整表述為**：「極有限、低確定性的證據顯示 pregabalin+duloxetine 合併治療可能在短期內較單一治療更能減輕疼痛；安全性結果因試驗數少與精確度不足仍不明確——尚不足以作為常規合併治療的穩健建議基礎。」（此為指定必用措辭，見 `03_DECISION-LOG.md` Decision 2026-09-03-10）
 
 **主持人訊息**：合併治療是一個**假說產生性（hypothesis-generating）而非已證實**的策略，不應在無限定詞的情況下呈現為「合併治療更有效」。
@@ -184,7 +184,7 @@ AAN 2022 Rec 7 建議：**以有效劑量治療約 12 週**無顯著止痛效果
 ⚠️ **重要框架提醒**：以下安全性內容因本專案角色分工而記載特別詳盡，**這反映的是查證分工的深度，而非「Pregabalin 安全性劣於其他藥物類別」的研究發現**。多項風險屬 gabapentinoid 類別共通風險（例如呼吸抑制警語 gabapentin 仿單亦有近乎相同之描述），並非 Pregabalin 獨有；解讀時應與 duloxetine、amitriptyline、gabapentin 之對應風險並列比較，而非單獨看待。
 
 **常見劑量依賴性不良反應**（DPN 試驗族群，N=1438）：
-- 頭暈 21%（安慰劑 5%）；嗜睡 12%（安慰劑 3%）——600 mg/day 時上升至 29%/16%
+- 頭暈 21%（安慰劑 5%）；嗜睡 12%（安慰劑 3%）（All PGB 劑量合併，`LABELING_FDA.md`/`LABELING_TFDA.md` 逐字確認；仿單原始 PDF 另有依劑量分層之完整表格，惟該分層數值未經查證團隊逐一擷取存檔，本簡報不予引用未經頁碼定位確認之分層數字，見 `99_FINAL-QA.md` §2.1）
 - 周邊水腫 9%（安慰劑 2%）；體重增加 4%（安慰劑 0%）
 - 因不良反應停藥 9%（安慰劑 4%），最常見原因為頭暈（3%）與嗜睡（2%）
 
@@ -192,7 +192,7 @@ AAN 2022 Rec 7 建議：**以有效劑量治療約 12 週**無顯著止痛效果
 
 **周邊水腫／體重增加與 thiazolidinedione 併用之交互風險**（糖尿病族群特別相關）：單用 Pregabalin 者水腫 8%、體重增加 4%；單用 thiazolidinedione 者水腫 3%、體重增加 0%；**兩者併用者水腫上升至 19%、體重增加上升至 7.5%**——此為明確可行動之臨床提醒。NYHA Class III/IV 心衰竭病人資料有限，仿單建議**謹慎使用**（非絕對禁忌）。
 
-**停藥／戒斷**：停藥須**至少 1 週逐漸減量**；驟停可能出現失眠、噁心、頭痛、焦慮、多汗、腹瀉;上市後另有癲癇發作、憂鬱、自殺意念/行為等戒斷相關報告。
+**停藥／戒斷**：停藥須**至少 1 週逐漸減量**；驟停可能出現失眠、噁心、頭痛、焦慮、多汗、腹瀉；上市後另有癲癇發作、憂鬱、自殺意念/行為等戒斷相關報告。
 
 **濫用／依賴性**：美國列為 **Schedule V 管制藥品**；娛樂性使用者研究中，450mg 單次劑量之主觀「良好藥物感受」與 diazepam 30mg 相近；euphoria 通報率 4%（安慰劑 1%）。**應與鴉片類藥物之致死性過量風險及成癮負擔相較之下脈絡化呈現**，不宜孤立解讀。台灣現行仿單**未載明管制藥品分級**，TFDA 官方查詢系統本次檢索無資料——**尚無法確認台灣是否將 Pregabalin 列為管制藥品，簡報中不應臆測其分級**。
 
@@ -204,7 +204,7 @@ AAN 2022 Rec 7 建議：**以有效劑量治療約 12 週**無顯著止痛效果
 
 ---
 
-## 6. 爭議、證據缺口與贊助偏誚防範
+## 6. 爭議、證據缺口與贊助偏誤防範
 
 ### 6.1 尚未解決的證據缺口（誠實揭露，不得於現場臆測補全）
 
@@ -214,7 +214,7 @@ AAN 2022 Rec 7 建議：**以有效劑量治療約 12 週**無顯著止痛效果
 - ADA 2026 Rec 12.19/12.20 之逐字引用與精確分級對應，因原始擷取方式限制，**信心程度中等**，正式引用前應以原始 PDF/HTML 全文再次核對。
 - OPTION-DM 主論文（13 中心）與其 HTA 附屬報告（21 中心）之中心數差異尚未釐清，已如實記錄而非逕自調和。
 
-### 6.2 贊助偏誚防範檢查清單（撰寫與口頭呈現時應遵守）
+### 6.2 贊助偏誤防範檢查清單（撰寫與口頭呈現時應遵守）
 
 1. **不得**將 2011 年已退役 AAN 指引之 Pregabalin 專屬 Level A 等級，未加註「已退役、現行指引未沿用」而直接引用為現行證據等級。
 2. **不得**將 Soliman/NeuPSIG 2025 之 α2δ-ligands class-level NNT 簡化陳述為「Pregabalin NNT 8.9」。
