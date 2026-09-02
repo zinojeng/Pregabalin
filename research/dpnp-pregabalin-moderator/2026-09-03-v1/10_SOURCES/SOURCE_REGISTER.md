@@ -24,13 +24,20 @@ No entry below should be treated as an accepted citation for `40_SYNTHESIS/` unt
 
 ### B1. ADA Standards of Care in Diabetes—2026, Chapter 12 (Retinopathy, Neuropathy, and Foot Care)
 
-- Status: `IDENTIFIED_MULTI_SNIPPET`
-- Corroborating sources (independent, converging on same recommendation numbering/wording):
-  - PMC full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC12690177 (title: "12. Retinopathy, Neuropathy, and Foot Care: Standards of Care in Diabetes—2026")
-  - PubMed record: https://pubmed.ncbi.nlm.nih.gov/41358886 — "Standards of Care in Diabetes-2026." *Diabetes Care.* 2026 Jan 1;49(Suppl 1):S261–S276. Author: ADAPP Committee. DOI shown truncated in search snippet as `10.2337…` — **full DOI not yet confirmed, do not fabricate the suffix.**
+- Status: `ACCESS_VERIFIED` (PMC record itself opened directly by source-provenance for bibliographic/licensing purposes per Director's full-text-acquisition directive; recommendation-text verbatim/locator work for citation purposes remains owned by `dpnp-guideline-diagnosis` — not duplicated here)
+- Confirmed bibliographic record (opened directly, 2026-09-03):
+  - American Diabetes Association Professional Practice Committee for Diabetes. "12. Retinopathy, Neuropathy, and Foot Care: Standards of Care in Diabetes—2026." *Diabetes Care.* 2025 Dec 8;49(Suppl 1):S261–S276.
+  - **DOI (confirmed): 10.2337/dc26-S012**
+  - **PMID: 41358886** · **PMCID: PMC12690177**
+  - Publisher: American Diabetes Association
+  - URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12690177
+  - **License (verbatim):** "© 2025 by the American Diabetes Association. Readers may use this work for educational, noncommercial purposes if properly cited and unaltered." Also states: "This publication and its contents may not be reproduced, distributed, or used for text or data mining, machine learning, or similar technologies without prior written permission."
+  - **Full-text/PDF-parse implication:** the explicit no-TDM/no-ML clause means this PDF must NOT be run through LlamaParse or any similar automated extraction tool without ADA's prior written permission — see `FULLTEXT_LEDGER.md` (BLOCKED for bulk parsing; direct human-style reading/short verbatim quotation under the educational/noncommercial clause remains permitted).
+- Note: `02_SOURCE-INVENTORY.md`'s original PubMed-snippet date ("2026 Jan 1") differs slightly from the PMC page's own citation date ("2025 Dec 8") for the same article — both refer to the same DOI/PMID; flagging per the non-negotiable rule against silently repairing discrepancies rather than picking one.
+- Other corroborating mirrors (not opened, for cross-check only):
   - Guideline Central mirror: https://www.guidelinecentral.com/guideline/14119
-  - Publisher PDF mirror (secondary host, for cross-check only, not a substitute for the PMC/journal version): https://www.binasss.sa.cr/standards-of-care-2026.pdf
-- Content already surfaced in snippets (needs direct page open + locator before citation):
+  - Third-party PDF mirror (not authoritative, do not cite in place of PMC/journal): https://www.binasss.sa.cr/standards-of-care-2026.pdf
+- Content already surfaced in snippets (still needs direct page open + locator before citation by the owning specialist):
   - Rec 12.20: glucose/weight/BP/lipid management to prevent/slow neuropathy (grades C/B)
   - Rec 12.21: assess and treat pain related to DPN (B) and autonomic neuropathy symptoms (E) to improve QoL
   - Rec 12.22: gabapentinoids, SNRIs, TCAs, and sodium-channel blockers recommended as initial pharmacologic treatments for diabetic neuropathic pain (A); combinations may provide additional relief (A); opioids incl. tramadol are addressed separately (AAN referenced against opioids except rare circumstances)
@@ -53,15 +60,25 @@ No entry below should be treated as an accepted citation for `40_SYNTHESIS/` unt
 
 ### B3. Taiwan TFDA / other national regulator Pregabalin label and safety communications
 
-- Status: `NOT_YET_SEARCHED`
-- Reason: search for "台灣 食藥署 Pregabalin Lyrica 仿單" was interrupted this wave before results returned (user directive to stop further Tavily calls this turn).
-- Action needed: repeat this search in the next working turn; also check TFDA (衛生福利部食品藥物管理署) 藥物許可證查詢 and the Taiwan Lyrica package insert directly.
+- Status: `PARTIALLY_VERIFIED` — one regulatory safety communication `ACCESS_VERIFIED`; the current full package-insert (仿單) text is still an unresolved gap.
+- `ACCESS_VERIFIED` (opened directly, 2026-09-03): 食品藥物管理局 (now 衛生福利部食品藥物管理署) safety communication, "食品藥物管理局提醒醫療人員及病患使用Lyrica藥物可能導致自殺意念或企圖之副作用." Published 2010-07-15/16 (page shows both "建檔日期：99-07-15" and a "July 16, 2010" rendering — dates differ by a day across two independently fetched pages, flagging rather than reconciling). Drug: Pregabalin / Lyrica (利瑞卡膠囊). License numbers: 衛署藥輸字第024955、024956、024957號. Content: warns of possible suicidal ideation/attempt risk with pregabalin (antiepileptic-class signal), instructs physicians to inform patients and monitor behavior. URLs: https://www.fda.gov.tw/tc/siteListContent.aspx?id=3127 and mirrored at https://www.mohw.gov.tw/cp-16-26335-1.html.
+- **Caveat:** this is a 2010 safety alert, not the current TFDA-approved package insert/label full text, and its license numbers (024955-024957) may not match the currently marketed product's license number(s).
+- `IDENTIFIED_MULTI_SNIPPET` (not yet opened directly): a distinct, apparently more current license — 衛部藥輸字第027054號 (via a military/dependent-pharmacy formulary listing, reg.802.mnd.gov.tw) — and hospital patient-education material (奇美醫療體系, chimei.org.tw) naming two currently dispensed Taiwan products: Lyrica 利瑞卡膠囊 75mg (藥號23P192) and Pregabalin Viatris 普痛佳寧膠囊 75mg (藥號23P225), both listing 糖尿病周邊神經病變所引起的神經性疼痛 among indications. These are secondary/derivative sources (formulary listing, hospital patient leaflet), not the primary TFDA license record — do not cite as the label itself.
+- **Action needed (not this session unless re-dispatched):** open the TFDA drug-license query system (info.fda.gov.tw) directly for license 027054 (or the current Lyrica/普痛佳寧 license) to obtain the current, authoritative 仿單 text with exact indication wording and dosing table; reconcile against the 2010 alert's license numbers.
 
 ### B4. FDA Lyrica (pregabalin) prescribing information
 
-- Status: `NOT_YET_SEARCHED`
-- Reason: search was auto-backgrounded and then failed (`Tavily API error: read ETIMEDOUT`) this wave.
-- Action needed: repeat search for FDA label via DailyMed (dailymed.nlm.nih.gov) or accessdata.fda.gov directly next turn; DailyMed is generally the fastest lawful primary route for current FDA label text/dosing tables/renal-adjustment tables.
+- Status: `ACCESS_VERIFIED`
+- Located via DailyMed public SPL index (https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=LYRICA), opened directly, 2026-09-03:
+  - SPL setid: `60185c88-ecfd-46f9-adb9-b97c6b00a553`, spl_version 59, **SPL index published_date: 2025-09-29**
+  - Page header itself (opened at https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=60185c88-ecfd-46f9-adb9-b97c6b00a553) displays **"Updated June 15, 2020"** — a discrepancy between the SPL index date and the page's own displayed update date; both are recorded here rather than silently reconciled. `dpnp-pregabalin-safety` should confirm which date reflects the operative label version before citing.
+  - Manufacturer: Parke-Davis Div. of Pfizer Inc. Controlled substance schedule: CV.
+  - Indications include: management of neuropathic pain associated with diabetic peripheral neuropathy, postherpetic neuralgia, adjunctive seizure therapy (≥1 month old), fibromyalgia, neuropathic pain from spinal cord injury.
+  - Renal dose-adjustment table (CrCl bands ≥60 / 30–60 / 15–30 / <15 mL/min against 150/300/450/600 mg/day) captured verbatim in the fetch; full table to be re-verified by `dpnp-pregabalin-safety` directly against the PDF (see `FULLTEXT_LEDGER.md` — PDF downloaded this wave).
+  - Key warnings captured: angioedema, respiratory depression w/ CNS depressants, antiepileptic-class suicidality signal (~2x), peripheral edema (6% vs 2% placebo), weight gain (≥7% gain in 9% vs 2% placebo), withdrawal/taper guidance (≥1 week), Schedule CV abuse/dependence potential.
+  - Adverse reactions: dizziness 30% vs 8% placebo; somnolence 23% vs 8% placebo; peripheral edema 6% vs 2% placebo.
+  - No boxed warning present on this label.
+- **US federal regulatory content is not subject to US copyright (17 U.S.C. §105) — no TDM/license restriction applies; this is the source used for the PI-directed download+parse task (see `FULLTEXT_LEDGER.md`).**
 
 ### B5. Diagnostic consensus for DSPN / small-fiber neuropathy (red flags, atypical features)
 
@@ -94,15 +111,19 @@ No entry below should be treated as an accepted citation for `40_SYNTHESIS/` unt
 - Full text: Frontiers is gold/hybrid open access — lawful full-text route is the publisher page itself (no paywall expected); confirm license (likely CC-BY) before any extended quotation.
 - Trial names referenced in MEDNOTE-002 (COMBO-DN, OPTION-DM) are candidate primary RCTs for head-to-head/combination-strategy evidence — not yet searched at their own primary registry/publication; hand off to `dpnp-trials-comparative` as named leads.
 
-## D. Open coverage gaps at end of Wave 1 (source-provenance scope)
+## D. Open coverage gaps as of this update (source-provenance scope)
 
-1. Taiwan TFDA and any major non-US regulator (EMA) Pregabalin label/safety communication — not yet searched (see B3).
-2. FDA DailyMed/accessdata Pregabalin label — search attempted, failed on tool timeout, not retried this wave (see B4).
-3. Exact/complete DOI for the ADA Standards of Care 2026 Chapter 12 record — truncated in all snippets obtained so far (see B1).
-4. Direct primary-record confirmation (not press release or citing-paper reference list) for the AAN 2022 guideline (B2), Freeman 2008 (C1), Soliman 2025 (C2), and Mallick-Searle 2024 (C3).
-5. Toronto Consensus (Tesfaye et al. 2010) primary citation not yet independently pulled, despite appearing as a lead in three places.
-6. COMBO-DN and OPTION-DM trials named in MEDNOTE-002 not yet located at their own primary publications.
-7. Numeric claims in `MEDNOTE_CAPTURE.md` (incidence/prevalence/NNT/NNH/discontinuation figures) have no primary citation attached yet.
-8. No systematic search yet run for a current DSPN/small-fiber-neuropathy diagnostic consensus statement distinct from Toronto Consensus (e.g., any 2020s update).
+Closed since Wave 1 report: B1 DOI now confirmed (10.2337/dc26-S012) and its license captured; B3 has one `ACCESS_VERIFIED` TFDA/MOHW safety communication; B4 is `ACCESS_VERIFIED` with the FDA label content captured and the PDF downloaded (see `FULLTEXT_LEDGER.md`).
 
-None of the above gaps should be read as blocking downstream specialists from starting guideline/diagnosis or trials/comparative work on the leads already identified — they should independently open and verify the specific primary records listed above rather than waiting for source-provenance to do it a second time, per role-ownership boundaries. Source-provenance will continue closing B3/B4 and the DOI/primary-record gaps in the next turn.
+Still open:
+
+1. Taiwan TFDA current package-insert (仿單) full text for the currently marketed Lyrica/普痛佳寧 product (license likely 衛部藥輸字第027054號 or a 23P19x/23P22x-series number) — only the 2010 suicidality alert is directly verified; no current label opened yet (see B3).
+2. Any major non-US regulator beyond Taiwan/US (e.g., EMA SmPC) — not searched this run.
+3. Direct primary-record confirmation (not press release or citing-paper reference list) for the AAN 2022 guideline (B2), Freeman 2008 (C1), Soliman 2025 (C2), and Mallick-Searle 2024 (C3) — now owned by `dpnp-guideline-diagnosis` / `dpnp-trials-comparative` per Director's Wave 2 dispatch; source-provenance will not re-open these.
+4. Toronto Consensus (Tesfaye et al. 2010) primary citation not yet independently pulled, despite appearing as a lead in three places — owned by `dpnp-guideline-diagnosis` (B5) per Wave 2 dispatch.
+5. COMBO-DN and OPTION-DM trials named in MEDNOTE-002 not yet located at their own primary publications — owned by `dpnp-trials-comparative` per Wave 2 dispatch.
+6. Numeric claims in `MEDNOTE_CAPTURE.md` (incidence/prevalence/NNT/NNH/discontinuation figures) have no primary citation attached yet.
+7. No systematic search yet run for a current DSPN/small-fiber-neuropathy diagnostic consensus statement distinct from Toronto Consensus (e.g., any 2020s update).
+8. Two internal date discrepancies logged rather than silently reconciled: the ADA chapter's citation date on PMC (2025-12-08) vs. the earlier PubMed-snippet date (2026-01-01); and the FDA LYRICA SPL index date (2025-09-29) vs. the label page's own "Updated June 15, 2020" text.
+
+Items 3–5 are explicitly owned by other specialists per the Director's Wave 2 dispatch; source-provenance will not duplicate that verification. Source-provenance continues to own items 1, 2, 6, 7, 8.
