@@ -1,8 +1,8 @@
 # Status
 
 - Updated: 2026-09-03 (Asia/Taipei)
-- Current Wave: `2 METHODS/EVIDENCE (guideline, trials, safety)`
-- Current Gate: `Gate 1 = READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-05)
+- Current Wave: `2 METHODS/EVIDENCE — complete, entering Challenge Round → Gate 2`
+- Current Gate: `Gate 1 = READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-05); Gate 2 not yet declared
 
 ## Completed
 
@@ -24,17 +24,20 @@
 - `dpnp-guideline-diagnosis`: open and verify ADA 2026 Ch.12, AAN 2022 update, and Toronto Consensus at their primary records with exact quotations/locators.
 - `dpnp-pregabalin-safety`: independently search for the Taiwan/FDA Pregabalin label rather than wait on source-provenance; verify labeling and safety evidence.
 
-## Completed (Wave 2, partial)
+## Completed (Wave 2 — all three specialists reported and accepted)
 
-- `dpnp-trials-comparative`: Wave 2 evidence table complete (`20_EVIDENCE/trials-comparative/01_EVIDENCE-TABLE.md`) — T1 Freeman 2008, T2 Frontiers 2026 combo SR-MA, T3 Soliman/NeuPSIG 2025, T4 Mallick-Searle 2024 (narrative review), T5 COMBO-DN, T6 OPTION-DM all `ACCESS_VERIFIED` at primary record. Key counter-bias findings recorded (Decision 2026-09-03-06): α2δ-ligand class NNT ranks numerically worst of the three first-line classes per Soliman/NeuPSIG 2025; COMBO-DN found no significant combination-vs-monotherapy superiority; OPTION-DM found no pregabalin-pathway superiority over amitriptyline/duloxetine pathways. Standing by for Gate 2 reconciliation with guideline-diagnosis and pregabalin-safety. `NEEDS_FULLTEXT`/`NEEDS_SOURCE` gaps logged, non-blocking.
+- `dpnp-trials-comparative`: Wave 2 evidence table complete (`20_EVIDENCE/trials-comparative/01_EVIDENCE-TABLE.md`) — T1 Freeman 2008, T2 Frontiers 2026 combo SR-MA, T3 Soliman/NeuPSIG 2025, T4 Mallick-Searle 2024 (narrative review), T5 COMBO-DN, T6 OPTION-DM all `ACCESS_VERIFIED` at primary record. Key counter-bias findings recorded (Decision 2026-09-03-06): α2δ-ligand class NNT ranks numerically worst of the three first-line classes per Soliman/NeuPSIG 2025; COMBO-DN found no significant combination-vs-monotherapy superiority; OPTION-DM found no pregabalin-pathway superiority over amitriptyline/duloxetine pathways.
+- `dpnp-guideline-diagnosis`: Wave 2 claim table complete (`20_EVIDENCE/guidelines-diagnosis/01_CLAIM-TABLE.md`) — ADA 2026 Ch.12, AAN 2022 (+ AAN 2011 confirmed retired), Toronto Consensus 2010, and Atmaca 2024 (EXPERT INTERPRETATION, not a formal successor consensus) all `ACCESS_VERIFIED`. Independently corroborating counter-bias finding recorded (Decision 2026-09-03-08): current operative guidelines grade the drug class, not pregabalin specifically; only the retired 2011 AAN guideline gave pregabalin a drug-specific Level A.
+- `dpnp-pregabalin-safety`: Wave 2 label verification complete (Decision 2026-09-03-09) — FDA label (Rev. 04/2025) and TFDA-stamped Taiwan insert both `ACCESS_VERIFIED`, numerically concordant on dosing/renal-adjustment/AE tables. All dispatched safety topics covered with locators. Two open items flagged, not guessed: Taiwan controlled-drug schedule unresolved; HLA-B*1502 mention identified as a likely template artifact and excluded from use.
+- Wave 2 dispatch (task #3) is now complete for all three specialists.
 
 ## Pending gates
 
 - Gate 1: `READY_WITH_PENDING_ITEMS` (partial — see above).
-- Gate 2: guideline, comparative evidence, and safety findings reconciled; challenge round run.
+- Gate 2: not yet declared. Next step: adversarial challenge round across all three Wave 2 specialists (why might any conclusion be wrong or read as sponsor bias), then reconciliation of any conflicts before Gate 2 sign-off.
 - Gate 3: Traditional Chinese synthesis and exactly 10 QA internally consistent.
-- Final Gate: independent read-only QA.
+- Final Gate: independent read-only QA + PI requirement (Decision 2026-09-03-07: at least one lawful full-text PDF downloaded and LlamaParse-parsed) must be satisfied.
 
 ## Blockers
 
-- None hard-blocking; several `NEEDS_SOURCE`/`NEEDS_EVIDENCE` items open (see `04_OPEN-QUESTIONS.md`). No claim may cite MEDNOTE-002's numeric figures (NNT/NNH/discontinuation) until independently sourced to a primary study.
+- None hard-blocking; several `NEEDS_SOURCE`/`NEEDS_EVIDENCE`/`NEEDS_FULLTEXT` items open (see `04_OPEN-QUESTIONS.md`). No claim may cite MEDNOTE-002's numeric figures (NNT/NNH/discontinuation) until independently sourced to a primary study. PI's lawful-PDF+LlamaParse requirement (Decision 2026-09-03-07) is dispatched to `dpnp-source-provenance`, outcome not yet reported.
