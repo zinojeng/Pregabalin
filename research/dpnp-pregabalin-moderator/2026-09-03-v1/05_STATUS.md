@@ -44,6 +44,7 @@
 
 - Independent read-only auditor (temporary, no write access beyond `99_FINAL-QA.md`) completed full review: numbers, methods/evidence (all 6 mandated sponsor-bias checks passed with zero exceptions), writing, and provenance (8/8 spot-checked DOIs/PMIDs resolved correctly via Europe PMC, including the load-bearing AAN 2011 `[RETIRED]` tag). Research-quality verdict: `PASS_WITH_MINOR_ISSUES`.
 - Director accepted the report and fixed both findings directly (Decision 2026-09-03-17): removed an untraceable dose-stratified AE figure from the Brief (replaced with the already-verified All-PGB figures plus a disclosure note, not silently dropped) and corrected an incomplete OPTION-DM sample-size statement in both synthesis files.
+- `dpnp-pregabalin-safety` resolved all three audit-routed figures in its own file (Decision 2026-09-03-18): two were correct-but-unlocated (now locator-cited); one — ataxia "7% at 600 mg/day" — was a genuine transcription error, corrected to the true value (4%, identical FDA/TFDA) with an in-file disclosure note. The 7% figure never reached `40_SYNTHESIS/`, so no further downstream correction was needed.
 
 ## Gate history (all gates this run)
 
