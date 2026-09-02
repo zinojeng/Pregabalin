@@ -9,8 +9,8 @@
 - Git commit at initialization: `UNBORN`
 - Git remote: `https://github.com/zinojeng/Pregabalin.git`
 - Previous run: none identified
-- Current Wave: `0 ORIENT → 1 ACQUIRE/VERIFY`
-- Current Gate: `BLOCKED_FOR_SOURCE` until source register and authoritative guideline set are verified
+- Current Wave: `4 INDEPENDENT AUDIT — complete` (Waves 0-4 all complete; see `05_STATUS.md` for full gate history)
+- Current Gate: **`READY_WITH_EXTERNAL_BLOCKER`** (Decision 2026-09-03-17 in `03_DECISION-LOG.md`) — research/synthesis/audit complete with `PASS_WITH_MINOR_ISSUES` (both findings fixed); NOT marked `FINAL` because the LlamaParse network blocker (Decision 2026-09-03-15) remains open per explicit Human PI instruction not to waive it.
 
 ## Persistent session topology
 

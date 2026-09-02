@@ -1,8 +1,8 @@
 # Status
 
 - Updated: 2026-09-03 (Asia/Taipei)
-- Current Wave: `4 INDEPENDENT AUDIT`
-- Current Gate: `Gate 3 = READY_FOR_AUDIT` (Decision 2026-09-03-16). **Final Gate will NOT be marked FINAL/PASS while the LlamaParse network blocker (Decision 2026-09-03-15) stands — per explicit Human PI instruction, this requirement is not waived.**
+- Current Wave: `4 INDEPENDENT AUDIT — complete`
+- **Current/Final Gate: `READY_WITH_EXTERNAL_BLOCKER`** (Decision 2026-09-03-17). Independent audit returned research-quality verdict `PASS_WITH_MINOR_ISSUES`; both findings (untraceable dose-stratified AE figure, incomplete OPTION-DM N) were fixed directly in `40_SYNTHESIS/`. **This run is NOT marked FINAL/PASS** — per explicit Human PI instruction, the LlamaParse network blocker (Decision 2026-09-03-15) remains open and is not waived. All research/synthesis/audit work not dependent on that blocker is complete.
 
 ## Completed
 
@@ -40,12 +40,17 @@
 
 - Both required synthesis deliverables written: `40_SYNTHESIS/DPNP_Pregabalin_Moderator_Brief_zh-TW.md`, `40_SYNTHESIS/DPNP_10_Insightful_QA_zh-TW.md`. Gate 3 self-check passed (no MEDNOTE leakage, no unsupported reversal-of-nerve-damage language, numeric tokens consistent across both files and the merged evidence tables).
 
-## Pending gates
+## Completed (Wave 4 — Independent Audit)
 
-- Gate 1: `READY_WITH_PENDING_ITEMS` (partial — see above).
+- Independent read-only auditor (temporary, no write access beyond `99_FINAL-QA.md`) completed full review: numbers, methods/evidence (all 6 mandated sponsor-bias checks passed with zero exceptions), writing, and provenance (8/8 spot-checked DOIs/PMIDs resolved correctly via Europe PMC, including the load-bearing AAN 2011 `[RETIRED]` tag). Research-quality verdict: `PASS_WITH_MINOR_ISSUES`.
+- Director accepted the report and fixed both findings directly (Decision 2026-09-03-17): removed an untraceable dose-stratified AE figure from the Brief (replaced with the already-verified All-PGB figures plus a disclosure note, not silently dropped) and corrected an incomplete OPTION-DM sample-size statement in both synthesis files.
+
+## Gate history (all gates this run)
+
+- Gate 1: `READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-05).
 - Gate 2: `READY_WITH_PENDING_ITEMS` (Decision 2026-09-03-13).
 - Gate 3: `READY_FOR_AUDIT` (Decision 2026-09-03-16).
-- Final Gate: **cannot be FINAL/PASS while the LlamaParse network blocker stands** (Decision 2026-09-03-15, explicit Human PI instruction not to waive). Independent read-only auditor now being launched; expected Final Gate outcome is `READY_WITH_EXTERNAL_BLOCKER` (or `PASS_WITH_MINOR_ISSUES` + open external blocker noted), not plain `PASS`, until the PI confirms network access or provides other instruction.
+- **Final Gate: `READY_WITH_EXTERNAL_BLOCKER`** (Decision 2026-09-03-17) — research quality is `PASS_WITH_MINOR_ISSUES` and now fully addressed; the run is deliberately NOT marked `FINAL`/plain `PASS` because the LlamaParse network blocker (Decision 2026-09-03-15) remains open per explicit Human PI instruction. To close: Human PI confirms network egress to `api.cloud.llamaindex.ai` is restored (retry proceeds with no new download) or explicitly waives the requirement.
 
 ## Residual blocker (tracked separately from research gates)
 
@@ -53,4 +58,4 @@
 
 ## Blockers
 
-- None hard-blocking; several `NEEDS_SOURCE`/`NEEDS_EVIDENCE`/`NEEDS_FULLTEXT` items open (see `04_OPEN-QUESTIONS.md`). No claim may cite MEDNOTE-002's numeric figures (NNT/NNH/discontinuation) until independently sourced to a primary study. PI's lawful-PDF+LlamaParse requirement (Decision 2026-09-03-07) is dispatched to `dpnp-source-provenance`, outcome not yet reported.
+- **One open blocker, external to this research team**: the LlamaParse network egress issue (Decision 2026-09-03-15), requiring Human PI/operator action — not resolvable by any peer's own effort. Everything else is non-blocking: several `NEEDS_SOURCE`/`NEEDS_EVIDENCE`/`NEEDS_FULLTEXT` items remain open (see `04_OPEN-QUESTIONS.md`) but are disclosed, not guessed. No claim may cite MEDNOTE-002's numeric figures (NNT/NNH/discontinuation) until independently sourced to a primary study.
