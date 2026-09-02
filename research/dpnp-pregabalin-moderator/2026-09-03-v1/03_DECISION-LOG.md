@@ -64,3 +64,15 @@
 - Reason: Correctly discarded a same-session false lead (an accessdata.fda.gov URL that actually resolved to SUBOXONE, a different drug/NDA) before use — good provenance discipline. Correctly identified and flagged a VGHTPE patient-leaflet HLA-B*1502 genetic-testing mention as a likely carbamazepine-class-AED template artifact misapplied to pregabalin, not a pregabalin-specific requirement — excluded from any counseling checklist pending independent corroboration. Taiwan controlled-drug (管制藥品) schedule status could not be confirmed via TFDA's own site this wave; not guessed, flagged `NEEDS_SOURCE`.
 - Affected files: `04_OPEN-QUESTIONS.md`, `05_STATUS.md`.
 - Approved by: Research Director.
+
+## Decision 2026-09-03-10 — Challenge-round phrasing guardrails from dpnp-trials-comparative
+
+- Decision: Adopt four mandatory phrasing constraints for `40_SYNTHESIS/`, derived from `dpnp-trials-comparative`'s challenge-round response (no correction needed to `01_EVIDENCE-TABLE.md` itself — these are synthesis-time guardrails):
+  1. T1 (Freeman 2008) is placebo-only, no active comparator — its dose-response/time-to-onset numbers may never be used to imply relative superiority over duloxetine/amitriptyline/gabapentin; must always be paired with T5/T6's head-to-head null findings.
+  2. T3 (Soliman/NeuPSIG) NNT/NNH must always carry the verbatim qualifier "α2δ-ligands (pooling gabapentin and pregabalin; not a pregabalin-only estimate)" — never presented as a standalone "pregabalin NNT."
+  3. T2 (Frontiers 2026 combo SR) maximally honest phrasing is fixed: "Very limited, low-certainty evidence (GRADE low, 3 RCTs, 471 patients, only 2 poolable for the primary endpoint) suggests pregabalin+duloxetine combination may reduce short-term pain more than monotherapy; safety outcomes remain uncertain due to few trials and imprecision — not yet a robust basis for a routine combination recommendation."
+  4. The counter-bias findings (Decision 2026-09-03-06) must not be overcorrected into an unsupported opposite claim: T5's duloxetine>pregabalin result was an uncorrected exploratory analysis (hypothesis-generating, not confirmatory) on a non-significant primary outcome; T6 showed near-zero differences with CIs centered on zero (statistical equivalence, not inferiority). Correct framing is "head-to-head RCTs found no significant difference among pregabalin-, duloxetine-, and amitriptyline-based regimens" — never "pregabalin underperformed" or "proven inferior."
+- Taxonomy: `VERIFIED_NEW_SENSITIVITY`
+- Reason: The challenge round is specifically designed to catch both directions of sponsor bias (overselling pregabalin AND overselling the negative findings against it) before drafting, per Runbook §30.
+- Affected files: `04_OPEN-QUESTIONS.md`.
+- Approved by: Research Director.
