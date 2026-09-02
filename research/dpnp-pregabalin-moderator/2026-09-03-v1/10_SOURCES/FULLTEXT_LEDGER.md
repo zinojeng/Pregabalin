@@ -18,10 +18,20 @@ Owner: `dpnp-source-provenance`. Governed by `FULLTEXT_POLICY.md`.
 ## B4 LlamaParse attempt log (PI-directed download+parse task)
 
 - PDF downloaded successfully (see row above).
-- `mcp__llamaparse__parse_pdf_to_markdown` invoked 3 times against the local file path: attempt 1 → `WriteTimeout`; attempts 2–3 → `ConnectTimeout`. No partial output saved.
-- Direct network egress to other hosts was confirmed working in this session (e.g., `dailymed.nlm.nih.gov`, `google.com` via `curl` both succeeded), so this appears to be a LlamaParse-service-specific connectivity issue from this environment, not a general network block — consistent with earlier same-wave Tavily `ETIMEDOUT` failures on unrelated calls.
-- **Status: BLOCKED_TOOL_FAILURE** for the parse step only — the download step itself succeeded and the checksum is recorded above. Not retried a 4th time this turn per loop-avoidance guidance; will retry once more in a later turn if re-dispatched, or hand off if the tool remains unavailable.
-- Interim mitigation: the label's clinically relevant content (indications, renal dose-adjustment table, boxed-warning status, key warnings, adverse-reaction rates) was already captured via direct WebFetch of the DailyMed HTML page (see `SOURCE_REGISTER.md` B4) and is available to `dpnp-pregabalin-safety` now, pending the LlamaParse markdown as a secondary cross-check against the PDF's exact typesetting/tables.
+- `mcp__llamaparse__parse_pdf_to_markdown` invoked 4 times total against the local file path across two turns: attempt 1 → `WriteTimeout`; attempts 2–4 → `ConnectTimeout`. No partial output saved on any attempt.
+
+### Remediation-turn diagnosis (no credentials read or exposed)
+
+- Confirmed the MCP's actual API host from `server.py` (code only, not the key file): `BASE_URL = "https://api.cloud.llamaindex.ai/api/v1/parsing"`, `REQUEST_TIMEOUT = httpx.Timeout(60.0, connect=15.0)`. The 15s connect-timeout / 60s overall-timeout configuration is reasonable and not the cause — the connection itself never completes within that window.
+- No `HTTP_PROXY`/`HTTPS_PROXY`/`NO_PROXY` environment variables are set that could be misrouting or blocking traffic.
+- DNS resolves correctly: `api.cloud.llamaindex.ai` → a Traefik/Kubernetes ELB (`k8s-traefik-...us-east-1.elb.amazonaws.com`) at multiple IPs (e.g., `35.173.170.221`).
+- **Unauthenticated connectivity test** (bare `curl` GET, no API key, no file payload) to `https://api.cloud.llamaindex.ai/`: TCP connect can complete (`time_connect≈3.3s` when pinned to a specific resolved IP via `--resolve`) but **zero bytes are ever received afterward**, timing out after 15s with no TLS/HTTP response. A second run without pinning an IP timed out even at the connect stage (`curl: (28) Connection timed out`).
+- By contrast, `curl` to `dailymed.nlm.nih.gov` and `google.com` succeeded normally in the same session (HTTP 200, sub-2s).
+- **Conclusion:** this is a categorical network-egress block/stall specific to `api.cloud.llamaindex.ai` from this sandboxed environment — not a file-size, upload-size, or PDF-content issue, and not an application-level timeout misconfiguration. The identical stall reproduces on a bare unauthenticated GET carrying no payload at all, which rules out "smaller PDF" as a fix: any request to this host stalls the same way regardless of what is sent. On this basis, source-provenance did not spend a further download+attempt cycle on the Frontiers 2026 SR-MA PDF as a size-based mitigation, since the diagnostic step already isolates the failure to network reachability of the destination host, independent of payload — happy to run that specific file anyway if the Director/PI wants the confirming data point for the record.
+- One bounded LlamaParse retry was executed this turn on the already-downloaded FDA PDF (no re-download) per Director dispatch: result `ConnectTimeout`, consistent with the diagnosis above.
+
+- **Status: BLOCKED_NETWORK** (upgraded from `BLOCKED_TOOL_FAILURE` now that root cause is isolated) — the download step succeeded and the checksum is recorded above; the parse step cannot succeed from this environment until network egress to `api.cloud.llamaindex.ai` is restored (this is outside `dpnp-source-provenance`'s remediation scope — it is an environment/infrastructure condition, not a source-provenance or file-provenance defect). No local parser (e.g., `pdftotext`) was substituted as a stand-in for "LlamaParse-parsed," per Director instruction — the PI named that specific tool.
+- Interim mitigation (unchanged): the label's clinically relevant content (indications, renal dose-adjustment table, boxed-warning status, key warnings, adverse-reaction rates) was already captured via direct WebFetch of the DailyMed HTML page (see `SOURCE_REGISTER.md` B4) and is available to `dpnp-pregabalin-safety` now.
 
 ## Policy compliance notes
 
